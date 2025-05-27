@@ -133,113 +133,110 @@ in
 
   # System packages with full alphabetical grouping
   environment.systemPackages = with pkgs; [
-    # A
+    
     android-tools
+
     alacritty
+    
     appimage-run
-
-    # B
+    
     btop
+    
     bluetui
-
-    # C
-
-    # D
+    
     duf
+    
     distrobox
-
-    # E
+    
     eza
-
-    # F
+    
     fzf
+    
     flatpak
+    
     firefox
+    
     fastfetch
-
-    # G
+    
     gamemode
+    
     gearlever
+    
     git
+    
     gccgo14
-
-    # H
+    
     haruna
-
-    # I
-    # (no packages)
-
-    # J
-    # (no packages)
-
-    # K
+    
     kitty
+    
     kdePackages.okular
 
-    # L
     libepoxy
+
     lua-language-server
+    
     localsend
 
-    # M
     motrix
 
-    # N
     neovim
-
-    # O
-
-    # P
+    
     p7zip
+    
     podman
+    
     proxychains
+    
     persepolis
-
-    # Q
-    # (no packages)
-
-    # R
-    # (no packages)
-
-    # S
+    
     stacer
-
-    # T
+    
     telegram-desktop
+    
     tor
+    
     tor-browser
-
-    # U
+    
     unrar
-
-    # V
+    
     vim
+    
     vulkan-tools
+    
     vlc
-
-    # W
+    
     wget
-
-    # X
+    
     xdotool
+    
     xfce.mousepad
+    
     xfce.orage
+    
     xfce.thunar
+    
     xfce.xfce4-notifyd
+    
     xfce.xfce4-power-manager
+    
     xfce.xfce4-pulseaudio-plugin
+    
     xfce.xfce4-screenshooter
+    
     xfce.xfce4-whiskermenu-plugin
+    
+
     xorg.xinit
-
-    # Y
-    # (no packages)
-
-    # Z
+    
     zsh
+    
     zsh-autosuggestions
+    
     zsh-syntax-highlighting
+    
     zoxide
+    
     zulu23
 
     # Unstable packages
