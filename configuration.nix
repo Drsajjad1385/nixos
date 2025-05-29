@@ -62,6 +62,8 @@ in
 
   # X-Server Config  
 
+  services.picom.enable = false;
+
   services.xserver = {
     enable = true;
     videoDrivers = [ "intel" "amdgpu" ];
@@ -143,6 +145,8 @@ in
     btop
     
     bluetui
+
+    chromium
     
     duf
     
@@ -181,7 +185,7 @@ in
     motrix
 
     neovim
-    
+
     p7zip
     
     podman
@@ -189,6 +193,8 @@ in
     proxychains
     
     persepolis
+
+    picom
     
     stacer
     
