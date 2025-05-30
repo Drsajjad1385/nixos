@@ -68,6 +68,7 @@ in
     enable = true;
     videoDrivers = [ "intel" "amdgpu" ];
     desktopManager.xfce.enable = true;
+    desktopManager.gnome.enable = true;
     displayManager.lightdm.enable = true;
     displayManager.lightdm.greeters.slick.enable = true;
     displayManager.lightdm.greeters.slick.extraConfig = ''
@@ -169,6 +170,18 @@ in
     git
     
     gccgo14
+
+    gnome-disk-utility
+
+    gnome-system-monitor
+
+    gnome-tweaks
+
+    gnome-extension-manager
+
+    gnome-shell-extensions
+
+    gnome-menus
     
     haruna
     
@@ -185,6 +198,8 @@ in
     motrix
 
     neovim
+
+    nautilus
 
     p7zip
     
