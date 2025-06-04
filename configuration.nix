@@ -154,6 +154,8 @@ in
     distrobox
     
     eza
+
+    eog
     
     fzf
     
