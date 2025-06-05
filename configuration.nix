@@ -18,7 +18,7 @@ in
       device = "/dev/sda3"; # Adjust to your EFI partition
     };
     loader.efi.canTouchEfiVariables = true;
-    kernelPackages = pkgs.linuxPackages_zen;
+    kernelPackages = pkgs.linuxKernel.packages.linux_xanmod_latest;
   };
 
   # Networking
@@ -41,40 +41,32 @@ in
   
   hardware.graphics = {
   enable = true;
+  enable32Bit = true;
   extraPackages = with pkgs; [
     amdvlk
     mesa
     vulkan-loader
     vulkan-tools
+    libva
+    intel-media-driver
+    intel-vaapi-driver
   ];
   };
  
   
-  # AmdGpu Kernel Drive
-
-  boot.kernelParams = [
-  "radeon.si_support=0"
-  "amdgpu.si_support=1"
-  "radeon.cik_support=0"
-  "amdgpu.cik_support=1"
-  ];
-
+ # AmdGpu Kernel Drive
+   
+   hardware.amdgpu.legacySupport.enable = true;
+   hardware.amdgpu.initrd.enable = true;
+   boot.initrd.kernelModules = [ "amdgpu" ];
 
   # X-Server Config  
-
-  services.picom.enable = false;
 
   services.xserver = {
     enable = true;
     videoDrivers = [ "intel" "amdgpu" ];
-    desktopManager.xfce.enable = true;
-    desktopManager.gnome.enable = true;
+    desktopManager.cinnamon.enable = true;
     displayManager.lightdm.enable = true;
-    displayManager.lightdm.greeters.slick.enable = true;
-    displayManager.lightdm.greeters.slick.extraConfig = ''
-      theme-name = Dracula
-      background = /usr/share/backgrounds/NixWall.jpg
-    '';
   };
 
   # Power management
@@ -118,11 +110,23 @@ in
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
-  # Browser
+  # Browser & Steam
   programs.firefox.enable = true;
 
   # Gaming
   programs.gamemode.enable = true;
+  programs.gamescope.enable = true;
+  programs.gamescope.capSysNice = true;
+
+
+  # Zram-Setup
+
+  zramSwap = {
+   enable = true;
+   algorithm = "zstd";      # Compression algorithm (e.g., "zstd", "lz4")
+   memoryPercent = 85;      # Use up to 80% of RAM for ZRAM swap
+   priority = 100;          # Swap priority
+  };
 
   # User accounts
   users.users.sajjad = {
@@ -148,6 +152,22 @@ in
     bluetui
 
     chromium
+
+    cinnamon-common
+
+    cinnamon-control-center
+
+    cinnamon-settings-daemon
+
+    cinnamon-session
+
+    cinnamon-menus
+
+    cinnamon-translations
+
+    cinnamon-screensaver
+
+    cinnamon-desktop
     
     duf
     
@@ -161,11 +181,7 @@ in
     
     flatpak
     
-    firefox
-    
     fastfetch
-    
-    gamemode
     
     gearlever
     
@@ -173,23 +189,15 @@ in
     
     gccgo14
 
-    gnome-disk-utility
-
-    gnome-system-monitor
-
-    gnome-tweaks
-
-    gnome-extension-manager
-
-    gnome-shell-extensions
-
-    gnome-menus
+    gparted
     
     haruna
     
     kitty
     
     kdePackages.okular
+    
+    kdePackages.filelight
 
     libepoxy
 
@@ -197,11 +205,15 @@ in
     
     localsend
 
+    lutris
+    
     motrix
+
+    mangohud
 
     neovim
 
-    nautilus
+    pkgs.nerd-fonts.comic-shanns-mono
 
     p7zip
     
@@ -211,9 +223,13 @@ in
     
     persepolis
 
-    picom
-    
+    protonup-qt
+
+    qbittorrent
+
     stacer
+
+    starship
     
     telegram-desktop
     
@@ -230,26 +246,11 @@ in
     vlc
     
     wget
-    
+
+    wineWowPackages.stable
+
     xdotool
     
-    xfce.mousepad
-    
-    xfce.orage
-    
-    xfce.thunar
-    
-    xfce.xfce4-notifyd
-    
-    xfce.xfce4-power-manager
-    
-    xfce.xfce4-pulseaudio-plugin
-    
-    xfce.xfce4-screenshooter
-    
-    xfce.xfce4-whiskermenu-plugin
-    
-
     xorg.xinit
     
     zsh
