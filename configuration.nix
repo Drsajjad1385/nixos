@@ -18,7 +18,7 @@ in
       device = "/dev/sda3"; # Adjust to your EFI partition
     };
     loader.efi.canTouchEfiVariables = true;
-    kernelPackages = pkgs.linuxKernel.packages.linux_xanmod_latest;
+    kernelPackages = pkgs.linuxKernel.packages.linux_xanmod_stable;
   };
 
   # Networking
