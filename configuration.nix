@@ -14,6 +14,7 @@ in
   boot = {
     loader.grub = {
       enable = true;
+      splashImage = "/etc/nixos/background.jpg";
       efiSupport = true;
       device = "/dev/sda3"; # Adjust to your EFI partition
     };
@@ -155,6 +156,8 @@ in
     
     bluetui
 
+    brave
+
     chromium
 
     cinnamon-common
@@ -186,6 +189,8 @@ in
     flatpak
     
     fastfetch
+
+    floorp
     
     gearlever
     
@@ -265,8 +270,7 @@ in
     
     zoxide
     
-    zulu23
-
+    zulu
     # Unstable packages
     unstable.ayugram-desktop
     unstable.nekoray
