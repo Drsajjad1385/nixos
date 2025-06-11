@@ -62,7 +62,7 @@ in
    boot.initrd.kernelModules = [ "amdgpu" ];
 
   # X-Server Config  
-
+  
   services.xserver = {
     enable = true;
     videoDrivers = [ "intel" "amdgpu" ];
@@ -142,6 +142,7 @@ in
 
   users.groups.plugdev = {};
   services.udev.packages = with pkgs; [ android-udev-rules ];
+  services.gvfs.enable = true;
 
   # System packages with full alphabetical grouping
   environment.systemPackages = with pkgs; [
@@ -178,8 +179,6 @@ in
     
     duf
     
-    distrobox
-    
     eza
 
     eog
@@ -210,6 +209,8 @@ in
 
     libepoxy
 
+    libwnck
+
     lua-language-server
     
     localsend
@@ -220,19 +221,23 @@ in
 
     mangohud
 
+    jmtpfs
+
     neovim
+
+    nautilus
 
     pkgs.nerd-fonts.comic-shanns-mono
 
     p7zip
-    
-    podman
     
     proxychains
     
     persepolis
 
     protonup-qt
+
+    plank
 
     qbittorrent
 
