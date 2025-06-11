@@ -63,15 +63,12 @@ in
 
   # X-Server Config  
   
+  services.displayManager.ly.enable = true;
+
   services.xserver = {
     enable = true;
     videoDrivers = [ "intel" "amdgpu" ];
     desktopManager.cinnamon.enable = true;
-    displayManager.lightdm.enable = true;
-    displayManager.lightdm.greeters.slick.enable = true;
-    displayManager.lightdm.greeters.slick.extraConfig = "
-	background = /usr/share/backgrounds/NixWall.jpg
-	";
   };
 
   # Power management
