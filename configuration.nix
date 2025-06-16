@@ -187,6 +187,8 @@ in
     fastfetch
 
     floorp
+
+    filezilla
     
     gearlever
     
@@ -262,8 +264,8 @@ in
 
     xdotool
     
-    xorg.xinit
-    
+    youtube-music
+
     zsh
     
     zsh-autosuggestions
