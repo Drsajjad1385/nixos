@@ -60,6 +60,12 @@ in
    hardware.amdgpu.legacySupport.enable = true;
    hardware.amdgpu.initrd.enable = true;
    boot.initrd.kernelModules = [ "amdgpu" ];
+   
+  # Enable Hyprland on nixos
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
 
   # X-Server Config  
   
@@ -156,6 +162,8 @@ in
 
     brave
 
+    brightnessctl
+
     chromium
 
     cinnamon-common
@@ -175,6 +183,8 @@ in
     cinnamon-desktop
     
     duf
+
+    dunst
     
     eza
 
@@ -210,6 +220,8 @@ in
 
     libwnck
 
+    libnotify
+
     lua-language-server
     
     localsend
@@ -225,6 +237,8 @@ in
     neovim
 
     nautilus
+
+    networkmanagerapplet
 
     pkgs.nerd-fonts.comic-shanns-mono
 
@@ -243,6 +257,8 @@ in
     stacer
 
     starship
+
+    swww
     
     telegram-desktop
     
@@ -261,6 +277,10 @@ in
     wget
 
     wineWowPackages.stable
+
+    waybar
+
+    wofi
 
     xdotool
     
