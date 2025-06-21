@@ -32,12 +32,6 @@ in
   time.timeZone = "Asia/Tehran";
   i18n.defaultLocale = "en_US.UTF-8";
 
-  # Console
-  console = {
-    font = "Lat2-Terminus16";
-    useXkbConfig = true;
-  };
-
   # Graphics and display
   
   hardware.graphics = {
@@ -151,150 +145,82 @@ in
   environment.systemPackages = with pkgs; [
     
     android-tools
-
     alacritty
-    
     appimage-run
-    
     btop
-    
     bluetui
-
     brave
-
     brightnessctl
-
     chromium
-
     cinnamon-common
-
     cinnamon-control-center
-
     cinnamon-settings-daemon
-
     cinnamon-session
-
     cinnamon-menus
-
     cinnamon-translations
-
     cinnamon-screensaver
-
     cinnamon-desktop
-    
     duf
-
     dunst
-    
     eza
-
     eog
-    
     fzf
-    
     flatpak
-    
     fastfetch
-
     floorp
-
     filezilla
-    
     gearlever
-    
     git
-    
     gccgo14
-
     gparted
-    
+    grim
     haruna
-    
     kitty
-    
     kdePackages.okular
-    
     kdePackages.filelight
-
     libepoxy
-
     libwnck
-
     libnotify
-
     lua-language-server
-    
     localsend
-
     lutris
-    
     motrix
-
     mangohud
-
     jmtpfs
-
     neovim
-
     nautilus
-
     networkmanagerapplet
-
     pkgs.nerd-fonts.comic-shanns-mono
-
     p7zip
-    
     proxychains
-    
     persepolis
-
     protonup-qt
-
     plank
-
     qbittorrent
-
     stacer
-
     starship
-
     swww
-    
+    slurp
     telegram-desktop
-    
     tor
-    
     tor-browser
-    
     unrar
-    
     vim
-    
     vulkan-tools
-    
     vlc
-    
     wget
-
     wineWowPackages.stable
-
     waybar
-
     wofi
-
+    wl-clipboard
     xdotool
-    
     youtube-music
-
     zsh
-    
     zsh-autosuggestions
-    
     zsh-syntax-highlighting
-    
     zoxide
-    
     zulu
+
     # Unstable packages
     unstable.ayugram-desktop
     unstable.nekoray
