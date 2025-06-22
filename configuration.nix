@@ -147,6 +147,7 @@ in
     android-tools
     alacritty
     appimage-run
+    anydesk
     btop
     bluetui
     brave
