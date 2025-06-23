@@ -170,6 +170,7 @@ in
     fastfetch
     floorp
     filezilla
+    ffmpeg
     gearlever
     git
     gccgo14
@@ -179,7 +180,6 @@ in
     kitty
     kdePackages.okular
     kdePackages.filelight
-    libepoxy
     libwnck
     libnotify
     lua-language-server
@@ -187,6 +187,8 @@ in
     lutris
     motrix
     mangohud
+    mpv
+    mpvpaper
     jmtpfs
     neovim
     nautilus
