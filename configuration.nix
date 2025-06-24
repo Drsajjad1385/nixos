@@ -227,6 +227,7 @@ in
     # Unstable packages
     unstable.ayugram-desktop
     unstable.nekoray
+    unstable.v2rayn
   ];
 
   # Nix settings
