@@ -218,6 +218,7 @@ in
     wl-clipboard
     xdotool
     youtube-music
+    yazi
     zsh
     zsh-autosuggestions
     zsh-syntax-highlighting
