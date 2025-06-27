@@ -87,7 +87,15 @@ in
     pulse.enable = true;
     alsa.enable = true;
   };
+  
+  # Jellyfin Services
+  services.jellyfin = {
+   enable = true;
+   openFirewall = true;
+  };
 
+
+  # Security
   security.rtkit.enable = true;
 
   # Flatpak support
@@ -177,6 +185,9 @@ in
     gparted
     grim
     haruna
+    jellyfin
+    jellyfin-web
+    jellyfin-ffmpeg
     kitty
     kdePackages.okular
     kdePackages.filelight
