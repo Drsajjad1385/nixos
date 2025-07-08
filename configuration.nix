@@ -90,7 +90,8 @@ in
   
   # Jellyfin Services
   services.jellyfin = {
-   enable = true;
+   enable = false;
+   user = "sajjad";
    openFirewall = true;
   };
 
@@ -184,6 +185,7 @@ in
     gccgo14
     gparted
     grim
+    gpclient
     haruna
     jellyfin
     jellyfin-web
@@ -204,6 +206,7 @@ in
     neovim
     nautilus
     networkmanagerapplet
+    openvpn
     pkgs.nerd-fonts.comic-shanns-mono
     p7zip
     proxychains
@@ -228,6 +231,7 @@ in
     wofi
     wl-clipboard
     xdotool
+    xfce.thunar
     youtube-music
     yazi
     zsh
