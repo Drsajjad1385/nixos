@@ -185,7 +185,6 @@ in
     gccgo14
     gparted
     grim
-    gpclient
     haruna
     jellyfin
     jellyfin-web
@@ -207,6 +206,7 @@ in
     nautilus
     networkmanagerapplet
     openvpn
+    openconnect
     pkgs.nerd-fonts.comic-shanns-mono
     p7zip
     proxychains
