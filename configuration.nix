@@ -207,6 +207,7 @@ in
     networkmanagerapplet
     openvpn
     openconnect
+    obs-studio
     pkgs.nerd-fonts.comic-shanns-mono
     p7zip
     proxychains
@@ -218,6 +219,7 @@ in
     starship
     swww
     slurp
+    scrcpy
     telegram-desktop
     tor
     tor-browser
