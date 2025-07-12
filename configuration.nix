@@ -1,12 +1,8 @@
 { config, lib, pkgs, ... }:
 
 let
-  unstable = import (builtins.fetchTarball {
-    url = "https://github.com/NixOS/nixpkgs/archive/refs/heads/nixpkgs-unstable.tar.gz";
-  }) {
-    config.allowUnfree = true;
-  };
-in
+    unstable = import <nixpkgs-unstable> { config.allowUnfree = true; };
+  in
 {
   imports = [ ./hardware-configuration.nix ];
 
