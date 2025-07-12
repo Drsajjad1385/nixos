@@ -144,6 +144,7 @@ let
     alacritty
     appimage-run
     anydesk
+    ayugram-desktop
     btop
     bluetui
     brave
@@ -192,6 +193,7 @@ let
     neovim
     nautilus
     networkmanagerapplet
+    nekoray
     openvpn
     openconnect
     obs-studio
@@ -214,6 +216,7 @@ let
     vim
     vulkan-tools
     vlc
+    v2rayn
     wget
     wineWowPackages.stable
     waybar
@@ -229,10 +232,7 @@ let
     zsh-syntax-highlighting
     zoxide
     zulu
-   # Unstable Packages
-    unstable.ayugram-desktop
-    unstable.nekoray
-    unstable.v2rayn
+   # Unstable Packages :
   ];
 
   # ───── Nix Configuration ───────────────────────────────
