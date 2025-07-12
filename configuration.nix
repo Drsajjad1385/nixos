@@ -232,6 +232,7 @@ in
     waybar
     wofi
     wl-clipboard
+    waypaper
     xdotool
     xfce.thunar
     youtube-music
