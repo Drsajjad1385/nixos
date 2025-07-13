@@ -156,6 +156,7 @@ let
     cinnamon-translations
     cinnamon-screensaver
     cinnamon-desktop
+    cliphist
     duf
     dunst
     eza
