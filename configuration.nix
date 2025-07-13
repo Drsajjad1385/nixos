@@ -148,6 +148,7 @@ let
     btop
     bluetui
     brightnessctl
+    bat
     cinnamon-common
     cinnamon-control-center
     cinnamon-settings-daemon
