@@ -147,9 +147,7 @@ let
     ayugram-desktop
     btop
     bluetui
-    brave
     brightnessctl
-    chromium
     cinnamon-common
     cinnamon-control-center
     cinnamon-settings-daemon
@@ -165,7 +163,6 @@ let
     fzf
     flatpak
     fastfetch
-    floorp
     filezilla
     ffmpeg
     gearlever
@@ -194,7 +191,6 @@ let
     neovim
     nautilus
     networkmanagerapplet
-    nekoray
     openvpn
     openconnect
     obs-studio
@@ -210,10 +206,8 @@ let
     swww
     slurp
     scrcpy
-    telegram-desktop
     tor
     tor-browser
-    tmux
     unrar
     vim
     vulkan-tools
@@ -226,7 +220,6 @@ let
     wl-clipboard
     waypaper
     xdotool
-    xfce.thunar
     youtube-music
     yazi
     zsh
