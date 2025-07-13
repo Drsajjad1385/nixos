@@ -209,6 +209,7 @@ let
     swww
     slurp
     scrcpy
+    screen
     telegram-desktop
     tor
     tor-browser
