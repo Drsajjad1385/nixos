@@ -219,6 +219,7 @@ let
     wofi
     wl-clipboard
     waypaper
+    wezterm
     xdotool
     youtube-music
     yazi
@@ -227,6 +228,7 @@ let
     zsh-syntax-highlighting
     zoxide
     zulu
+    zellij
    # Unstable Packages :
   ];
 
