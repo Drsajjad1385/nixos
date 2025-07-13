@@ -185,6 +185,7 @@ let
     lua-language-server
     localsend
     lutris
+    lazygit
     motrix
     mangohud
     mpv
@@ -209,10 +210,10 @@ let
     swww
     slurp
     scrcpy
-    screen
     telegram-desktop
     tor
     tor-browser
+    tmux
     unrar
     vim
     vulkan-tools
