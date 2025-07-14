@@ -173,6 +173,7 @@ let
     gparted
     grim
     haruna
+    helix
     jellyfin
     jellyfin-web
     jellyfin-ffmpeg
