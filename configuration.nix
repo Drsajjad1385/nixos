@@ -61,6 +61,16 @@ let
     videoDrivers = [ "intel" "amdgpu" ];
     desktopManager.cinnamon.enable = true;
   };
+  
+  # ───── Virtualisation & Containers ─────────────────────  
+  virtualisation = {
+    containers.enable = true;
+    podman = {
+      enable = true;
+      dockerCompat = true; # optional: creates a 'docker' alias for podman
+      defaultNetwork.settings.dns_enabled = true; # recommended for podman-compose networking
+    };
+  };
 
   # ───── Audio & Multimedia ──────────────────────────────
   services.pipewire = {
@@ -203,6 +213,8 @@ let
     persepolis
     protonup-qt
     plank
+    podman
+    podman-desktop
     qbittorrent
     stacer
     starship
