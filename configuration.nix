@@ -23,6 +23,8 @@ let
   networking = {
     hostName = "nixos-btw";
     networkmanager.enable = true;
+    firewall.allowedTCPPorts = [ 8096 ];
+    firewall.interfaces."podman[0-9]+".allowedUDPPorts = [ 53 ];
   };
 
   time.timeZone = "Asia/Tehran";
@@ -132,11 +134,12 @@ let
 
   users.users.sajjad = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" "audio" "plugdev" ];
+    extraGroups = [ "wheel" "networkmanager" "audio" "plugdev" "podman" ];
     packages = with pkgs; [ tree ];
   };
 
   users.groups.plugdev = {};
+  users.groups.podman = {};
 
   services.udev.packages = with pkgs; [ android-udev-rules ];
   services.gvfs.enable = true;
