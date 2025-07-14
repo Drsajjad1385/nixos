@@ -23,7 +23,7 @@ let
   networking = {
     hostName = "nixos-btw";
     networkmanager.enable = true;
-    firewall.allowedTCPPorts = [ 8096 ];
+    firewall.allowedTCPPorts = [ 8096 32400 ];
     firewall.interfaces."podman[0-9]+".allowedUDPPorts = [ 53 ];
   };
 
@@ -217,6 +217,7 @@ let
     protonup-qt
     plank
     podman
+    podman-tui
     podman-desktop
     qbittorrent
     stacer
