@@ -193,6 +193,7 @@ let
     kitty
     kdePackages.okular
     kdePackages.filelight
+    keepassxc
     libwnck
     libnotify
     lua-language-server
