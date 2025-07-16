@@ -24,7 +24,7 @@ let
     hostName = "nixos-btw";
     networkmanager.enable = true;
     firewall.allowedTCPPorts = [ 8096 32400 8080 ];
-    firewall.interfaces."podman[0-9]+".allowedUDPPorts = [ 53 ];
+    # firewall.interfaces."podman[0-9]+".allowedUDPPorts = [ 53 ];
   };
 
   time.timeZone = "Asia/Tehran";
@@ -65,15 +65,7 @@ let
   };
   
   # ───── Virtualisation & Containers ─────────────────────  
-  virtualisation = {
-    containers.enable = true;
-    podman = {
-      enable = true;
-      dockerCompat = true; # optional: creates a 'docker' alias for podman
-      defaultNetwork.settings.dns_enabled = true; # recommended for podman-compose networking
-    };
-  };
-
+ 
   # ───── Audio & Multimedia ──────────────────────────────
   services.pipewire = {
     enable = true;
@@ -134,24 +126,18 @@ let
 
   users.users.sajjad = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" "audio" "plugdev" "podman" ];
+    extraGroups = [ "wheel" "networkmanager" "audio" "plugdev" ];
     packages = with pkgs; [ tree ];
   };
 
   users.groups.plugdev = {};
-  users.groups.podman = {};
 
   services.udev.packages = with pkgs; [ android-udev-rules ];
   services.gvfs.enable = true;
 
   # ───── Optional Services ───────────────────────────────
-  services.jellyfin = {
-    enable = false;
-    user = "sajjad";
-    openFirewall = true;
-  };
 
-  # ───── System Packages ─────────────────────────────────
+   # ───── System Packages ─────────────────────────────────
   environment.systemPackages = with pkgs; [
     android-tools
     alacritty
@@ -187,10 +173,6 @@ let
     gparted
     grim
     haruna
-    helix
-    jellyfin
-    jellyfin-web
-    jellyfin-ffmpeg
     kitty
     kdePackages.okular
     kdePackages.filelight
@@ -217,9 +199,6 @@ let
     persepolis
     protonup-qt
     plank
-    podman
-    podman-tui
-    podman-desktop
     qbittorrent
     stacer
     starship
