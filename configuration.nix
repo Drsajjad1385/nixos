@@ -23,7 +23,7 @@ let
   networking = {
     hostName = "nixos-btw";
     networkmanager.enable = true;
-    firewall.allowedTCPPorts = [ 8096 32400 ];
+    firewall.allowedTCPPorts = [ 8096 32400 8080 ];
     firewall.interfaces."podman[0-9]+".allowedUDPPorts = [ 53 ];
   };
 
@@ -162,6 +162,7 @@ let
     bluetui
     brightnessctl
     bat
+    bitwarden-desktop
     cinnamon-common
     cinnamon-control-center
     cinnamon-settings-daemon
@@ -193,7 +194,6 @@ let
     kitty
     kdePackages.okular
     kdePackages.filelight
-    keepassxc
     libwnck
     libnotify
     lua-language-server
