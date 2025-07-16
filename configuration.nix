@@ -65,7 +65,14 @@ let
   };
   
   # ───── Virtualisation & Containers ─────────────────────  
- 
+  virtualisation.docker = {
+  enable = false;
+  rootless = {
+    enable = true;
+    setSocketVariable = true;
+    };
+   }; 
+
   # ───── Audio & Multimedia ──────────────────────────────
   services.pipewire = {
     enable = true;
@@ -127,7 +134,9 @@ let
   users.users.sajjad = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "audio" "plugdev" ];
-    packages = with pkgs; [ tree ];
+    packages = with pkgs; [
+    docker-compose
+    ];
   };
 
   users.groups.plugdev = {};
