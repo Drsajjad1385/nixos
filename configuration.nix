@@ -24,7 +24,7 @@ let
     hostName = "nixos-btw";
     networkmanager.enable = true;
     firewall.allowedTCPPorts = [ 8096 32400 8080 ];
-    # firewall.interfaces."podman[0-9]+".allowedUDPPorts = [ 53 ];
+    firewall.allowedUDPPorts = [ 53 ];
   };
 
   time.timeZone = "Asia/Tehran";
