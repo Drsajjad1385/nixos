@@ -138,8 +138,7 @@ let
   services.udev.packages = with pkgs; [ android-udev-rules ];
   services.gvfs.enable = true;
 
-  # ───── Optional Services ───────────────────────────────
-
+   # ───── Optional Services ───────────────────────────────
    # ───── System Packages ─────────────────────────────────
   environment.systemPackages = with pkgs; [
     android-tools
@@ -204,7 +203,6 @@ let
     protonup-qt
     plank
     qbittorrent
-    resilio-sync
     stacer
     starship
     swww
