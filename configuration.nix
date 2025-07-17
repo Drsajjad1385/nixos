@@ -23,8 +23,8 @@ let
   networking = {
     hostName = "nixos-btw";
     networkmanager.enable = true;
-    firewall.allowedTCPPorts = [ 8096 32400 32469 8080 5001 ];
-    firewall.allowedUDPPorts = [ 53 32400 32469 1900 ];
+    firewall.allowedTCPPorts = [ 8096 32400 5001 ];
+    firewall.allowedUDPPorts = [ 53 ];
   };
 
   time.timeZone = "Asia/Tehran";
@@ -66,12 +66,8 @@ let
   
   # ───── Virtualisation & Containers ─────────────────────  
   virtualisation.docker = {
-  enable = false;
-  rootless = {
-    enable = true;
-    setSocketVariable = true;
-    };
-   }; 
+  enable = true;
+  }; 
 
   # ───── Audio & Multimedia ──────────────────────────────
   services.pipewire = {
@@ -134,9 +130,7 @@ let
   users.users.sajjad = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "audio" "plugdev" ];
-    packages = with pkgs; [
-    docker-compose
-    ];
+    packages = with pkgs; [];
   };
 
   users.groups.plugdev = {};
@@ -169,6 +163,7 @@ let
     cliphist
     duf
     dunst
+    docker-compose
     eza
     eog
     fzf
