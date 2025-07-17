@@ -23,8 +23,8 @@ let
   networking = {
     hostName = "nixos-btw";
     networkmanager.enable = true;
-    firewall.allowedTCPPorts = [ 8096 8384 8920 22000 32400 5001 ];
-    firewall.allowedUDPPorts = [ 53 22000 21027 ];
+    firewall.allowedTCPPorts = [ 8096 8920 32400 5001 ];
+    firewall.allowedUDPPorts = [ 53 ];
   };
 
   time.timeZone = "Asia/Tehran";
@@ -204,6 +204,7 @@ let
     protonup-qt
     plank
     qbittorrent
+    resilio-sync
     stacer
     starship
     swww
