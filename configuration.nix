@@ -23,8 +23,8 @@ let
   networking = {
     hostName = "nixos-btw";
     networkmanager.enable = true;
-    firewall.allowedTCPPorts = [ 8096 32400 8080 ];
-    firewall.allowedUDPPorts = [ 53 ];
+    firewall.allowedTCPPorts = [ 8096 32400 32469 8080 5001 ];
+    firewall.allowedUDPPorts = [ 53 32400 32469 1900 ];
   };
 
   time.timeZone = "Asia/Tehran";
