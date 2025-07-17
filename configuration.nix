@@ -129,7 +129,7 @@ let
 
   users.users.sajjad = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" "audio" "plugdev" ];
+    extraGroups = [ "wheel" "networkmanager" "audio" "plugdev" "docker" ];
     packages = with pkgs; [];
   };
 
