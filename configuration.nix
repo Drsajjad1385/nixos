@@ -236,7 +236,7 @@ let
 
   # ───── Nix Configuration ───────────────────────────────
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.allowBroken = true;
+  nixpkgs.config.allowBroken = false;
 
   nix.settings.experimental-features = [
     "nix-command"
