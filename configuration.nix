@@ -138,8 +138,11 @@ let
   services.udev.packages = with pkgs; [ android-udev-rules ];
   services.gvfs.enable = true;
 
-   # ───── Optional Services ───────────────────────────────
-   # ───── System Packages ─────────────────────────────────
+  # ───── Optional Services ───────────────────────────────
+  
+  #         [ Nothing ]
+
+  # ───── System Packages ─────────────────────────────────
   environment.systemPackages = with pkgs; [
     android-tools
     alacritty
