@@ -179,6 +179,7 @@ let
     gparted
     grim
     haruna
+    hellwal
     kitty
     kdePackages.okular
     kdePackages.filelight
