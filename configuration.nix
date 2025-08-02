@@ -67,6 +67,7 @@ let
   # ───── Virtualisation & Containers ─────────────────────  
   virtualisation.docker = {
   enable = true;
+  storageDriver = "btrfs";
   }; 
 
   # ───── Audio & Multimedia ──────────────────────────────
@@ -179,7 +180,6 @@ let
     gparted
     grim
     haruna
-    hellwal
     kitty
     kdePackages.okular
     kdePackages.filelight
@@ -206,6 +206,7 @@ let
     persepolis
     protonup-qt
     plank
+    pywal
     qbittorrent
     stacer
     starship
