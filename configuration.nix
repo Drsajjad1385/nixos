@@ -180,6 +180,7 @@ let
     gparted
     grim
     haruna
+    jmtpfs
     kitty
     kdePackages.okular
     kdePackages.filelight
@@ -193,7 +194,6 @@ let
     mangohud
     mpv
     mpvpaper
-    jmtpfs
     neovim
     nautilus
     networkmanagerapplet
