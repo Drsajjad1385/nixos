@@ -140,6 +140,11 @@ let
 
   services.udev.packages = with pkgs; [ android-udev-rules ];
   services.gvfs.enable = true;
+  
+  # ───── Fonts ───────────────────────────────────────────
+  fonts.packages = with pkgs; [
+    nerd-fonts.comic-shanns-mono
+  ];
 
   # ───── Optional Services ───────────────────────────────
   
@@ -193,7 +198,6 @@ let
     openvpn
     openconnect
     obs-studio
-    pkgs.nerd-fonts.comic-shanns-mono
     p7zip
     proxychains
     persepolis
