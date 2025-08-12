@@ -236,7 +236,7 @@ let
     zoxide
     zulu
     zellij
-   # Unstable Packages :
+  # Unstable Packages :
   ];
 
   # ───── Nix Configuration ───────────────────────────────
