@@ -61,7 +61,6 @@ let
   services.xserver = {
     enable = true;
     videoDrivers = [ "intel" "amdgpu" ];
-    desktopManager.cinnamon.enable = true;
   };
   
   # ───── Virtualisation & Containers ─────────────────────  
@@ -91,7 +90,7 @@ let
   zramSwap = {
     enable = true;
     algorithm = "zstd";
-    memoryPercent = 85;
+    memoryPercent = 60;
     priority = 100;
   };
 
@@ -103,7 +102,10 @@ let
 
   xdg.portal = {
     enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-wlr
+    ];
   };
 
   programs.appimage = {
@@ -147,7 +149,6 @@ let
   environment.systemPackages = with pkgs; [
     android-tools
     alacritty
-    appimage-run
     anydesk
     ayugram-desktop
     btop
@@ -155,14 +156,6 @@ let
     brightnessctl
     bat
     bitwarden-desktop
-    cinnamon-common
-    cinnamon-control-center
-    cinnamon-settings-daemon
-    cinnamon-session
-    cinnamon-menus
-    cinnamon-translations
-    cinnamon-screensaver
-    cinnamon-desktop
     cliphist
     duf
     dunst
@@ -230,7 +223,6 @@ let
     xdotool
     youtube-music
     yazi
-    zsh
     zsh-autosuggestions
     zsh-syntax-highlighting
     zoxide
