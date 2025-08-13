@@ -203,7 +203,7 @@ let
     proxychains
     persepolis
     protonup-qt
-    plank
+    pcmanfm
     pywal
     qbittorrent
     stacer
