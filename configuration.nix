@@ -119,6 +119,7 @@ let
   # ───── Programs ────────────────────────────────────────
   programs = {
     zsh.enable = true;
+    amnezia-vpn.enable = true;
     firefox.enable = true;
     gamemode.enable = true;
     gamescope = {
@@ -233,6 +234,7 @@ let
     zulu
     zellij
   # Unstable Packages :
+    unstable.amnezia-vpn
   ];
 
   # ───── Nix Configuration ───────────────────────────────
