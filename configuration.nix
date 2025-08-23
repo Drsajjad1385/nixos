@@ -179,6 +179,7 @@ let
     gparted
     grim
     haruna
+    helix
     jmtpfs
     kitty
     kdePackages.okular
