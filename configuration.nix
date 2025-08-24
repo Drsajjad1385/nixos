@@ -1,10 +1,12 @@
-{ config, lib, pkgs, ... }:
-
-let
-    unstable = import <nixpkgs-unstable> { config.allowUnfree = true; };
-  in
 {
-  imports = [ ./hardware-configuration.nix ];
+  config,
+  lib,
+  pkgs,
+  ...
+}: let
+  unstable = import <nixpkgs-unstable> {config.allowUnfree = true;};
+in {
+  imports = [./hardware-configuration.nix];
 
   # ───── Boot ─────────────────────────────────────────────
   boot = {
@@ -16,15 +18,15 @@ let
     };
     loader.efi.canTouchEfiVariables = true;
     kernelPackages = pkgs.linuxKernel.packages.linux_xanmod_stable;
-    initrd.kernelModules = [ "amdgpu" ];
+    initrd.kernelModules = ["amdgpu"];
   };
 
   # ───── Host & Locale ───────────────────────────────────
   networking = {
     hostName = "nixos-btw";
     networkmanager.enable = true;
-    firewall.allowedTCPPorts = [ 8096 8920 7575 8080 5001 80 443 ];
-    firewall.allowedUDPPorts = [ 53 ];
+    firewall.allowedTCPPorts = [8096 8920 7575 8080 5001 80 443];
+    firewall.allowedUDPPorts = [53];
   };
 
   time.timeZone = "Asia/Tehran";
@@ -60,14 +62,14 @@ let
 
   services.xserver = {
     enable = true;
-    videoDrivers = [ "intel" "amdgpu" ];
+    videoDrivers = ["intel" "amdgpu"];
   };
-  
-  # ───── Virtualisation & Containers ─────────────────────  
+
+  # ───── Virtualisation & Containers ─────────────────────
   virtualisation.docker = {
-  enable = true;
-  storageDriver = "btrfs";
-  }; 
+    enable = true;
+    storageDriver = "btrfs";
+  };
 
   # ───── Audio & Multimedia ──────────────────────────────
   services.pipewire = {
@@ -112,7 +114,7 @@ let
     enable = true;
     binfmt = true;
     package = pkgs.appimage-run.override {
-      extraPkgs = pkgs: [ pkgs.libepoxy ];
+      extraPkgs = pkgs: [pkgs.libepoxy];
     };
   };
 
@@ -133,22 +135,22 @@ let
 
   users.users.sajjad = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" "audio" "plugdev" "docker" ];
+    extraGroups = ["wheel" "networkmanager" "audio" "plugdev" "docker"];
     packages = with pkgs; [];
   };
 
   users.groups.plugdev = {};
 
-  services.udev.packages = with pkgs; [ android-udev-rules ];
+  services.udev.packages = with pkgs; [android-udev-rules];
   services.gvfs.enable = true;
-  
+
   # ───── Fonts ───────────────────────────────────────────
   fonts.packages = with pkgs; [
     nerd-fonts.comic-shanns-mono
   ];
 
   # ───── Optional Services ───────────────────────────────
-  
+
   #         [ Nothing ]
 
   # ───── System Packages ─────────────────────────────────
@@ -157,6 +159,7 @@ let
     alacritty
     anydesk
     ayugram-desktop
+    alejandra
     btop
     bluetui
     brightnessctl
@@ -197,6 +200,7 @@ let
     neovim
     nautilus
     networkmanagerapplet
+    nixd
     openvpn
     openconnect
     obs-studio
@@ -234,7 +238,7 @@ let
     zoxide
     zulu
     zellij
-  # Unstable Packages :
+    # Unstable Packages :
     unstable.amnezia-vpn
   ];
 
@@ -250,4 +254,3 @@ let
   system.copySystemConfiguration = true;
   system.stateVersion = "24.11";
 }
-
