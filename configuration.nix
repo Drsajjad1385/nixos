@@ -181,6 +181,7 @@ in {
     gccgo14
     gparted
     grim
+    gemini-cli
     haruna
     helix
     jmtpfs
