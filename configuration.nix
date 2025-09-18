@@ -210,7 +210,6 @@ in {
     persepolis
     protonup-qt
     pcmanfm
-    pywal
     qbittorrent
     stacer
     starship
