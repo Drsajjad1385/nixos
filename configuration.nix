@@ -122,12 +122,7 @@ in {
   programs = {
     zsh.enable = true;
     amnezia-vpn.enable = true;
-    firefox.enable = true;
-    gamemode.enable = true;
-    gamescope = {
-      enable = true;
-      capSysNice = true;
-    };
+    firefox.enable = true;       
   };
 
   # ───── User Config ─────────────────────────────────────
@@ -192,12 +187,8 @@ in {
     libnotify
     lua-language-server
     localsend
-    lutris
     lazygit
     motrix
-    mangohud
-    mpv
-    mpvpaper
     neovim
     nautilus
     networkmanagerapplet
@@ -208,7 +199,6 @@ in {
     p7zip
     proxychains
     persepolis
-    protonup-qt
     pcmanfm
     qbittorrent
     stacer
@@ -220,7 +210,6 @@ in {
     tor-browser
     unrar
     vim
-    vulkan-tools
     vlc
     v2rayn
     wget
@@ -230,7 +219,6 @@ in {
     wl-clipboard
     waypaper
     wezterm
-    xdotool
     youtube-music
     yazi
     zsh-autosuggestions
