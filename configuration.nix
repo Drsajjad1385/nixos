@@ -213,7 +213,6 @@ in {
     vlc
     v2rayn
     wget
-    wineWowPackages.stable
     waybar
     wofi
     wl-clipboard
