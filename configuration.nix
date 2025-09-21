@@ -25,6 +25,7 @@ in {
   networking = {
     hostName = "nixos-btw";
     networkmanager.enable = true;
+    firewall.enable = false;
     firewall.allowedTCPPorts = [8096 8920 7575 8080 5001 80 443];
     firewall.allowedUDPPorts = [53];
   };
