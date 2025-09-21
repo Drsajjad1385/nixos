@@ -25,6 +25,8 @@ in {
   networking = {
     hostName = "nixos-btw";
     networkmanager.enable = true;
+    nameservers = [ "8.8.8.8" "1.1.1.1" "8.8.4.4" ];
+    dhcpcd.extraConfig = "nohook resolv.conf";
     firewall.enable = false;
     firewall.allowedTCPPorts = [8096 8920 7575 8080 5001 80 443];
     firewall.allowedUDPPorts = [53];
@@ -122,7 +124,7 @@ in {
   # ───── Programs ────────────────────────────────────────
   programs = {
     zsh.enable = true;
-    amnezia-vpn.enable = true;
+    amnezia-vpn.enable = false;
     firefox.enable = true;       
   };
 
@@ -147,7 +149,7 @@ in {
 
   # ───── Optional Services ───────────────────────────────
 
-  #         [ Nothing ]
+  services.resolved.enable = false;
 
   # ───── System Packages ─────────────────────────────────
   environment.systemPackages = with pkgs; [
