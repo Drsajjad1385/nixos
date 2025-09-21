@@ -151,6 +151,20 @@ in {
 
   services.resolved.enable = false;
 
+  services.mpd = {
+  enable = true;
+  user = "sajjad";
+  group = "audio";
+  musicDirectory = "/home/sajjad/Spotify";
+  extraConfig = ''
+    audio_output {
+      type "pulse"
+      name "PipeWire"
+      server "unix:/run/user/1000/pulse/native"
+    }
+  '';
+  };
+
   # ───── System Packages ─────────────────────────────────
   environment.systemPackages = with pkgs; [
     android-tools
@@ -192,6 +206,8 @@ in {
     localsend
     lazygit
     motrix
+    mpd
+    mpc
     neovim
     nautilus
     networkmanagerapplet
@@ -230,6 +246,7 @@ in {
     zellij
     # Unstable Packages :
     unstable.amnezia-vpn
+    unstable.rmpc
   ];
 
   # ───── Nix Configuration ───────────────────────────────
