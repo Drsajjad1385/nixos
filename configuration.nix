@@ -219,6 +219,9 @@ in {
     proxychains
     persepolis
     pcmanfm
+    python313
+    python313Packages.pip
+    picard
     qbittorrent
     stacer
     starship
