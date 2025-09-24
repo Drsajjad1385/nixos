@@ -14,19 +14,17 @@ in {
       enable = true;
       splashImage = "/etc/nixos/background.jpg";
       efiSupport = true;
-      device = "/dev/sda3";
+      devices = [ "nodev" ];
     };
     loader.efi.canTouchEfiVariables = true;
     kernelPackages = pkgs.linuxKernel.packages.linux_xanmod_stable;
-    initrd.kernelModules = ["amdgpu"];
   };
 
   # ───── Host & Locale ───────────────────────────────────
   networking = {
     hostName = "nixos-btw";
     networkmanager.enable = true;
-    nameservers = [ "8.8.8.8" "1.1.1.1" "8.8.4.4" ];
-    dhcpcd.extraConfig = "nohook resolv.conf";
+    nameservers = [ "8.8.8.8" "8.8.4.4" ];
     firewall.enable = false;
     firewall.allowedTCPPorts = [8096 8920 7575 8080 5001 80 443];
     firewall.allowedUDPPorts = [53];
@@ -133,22 +131,18 @@ in {
   users.users.sajjad = {
     isNormalUser = true;
     extraGroups = ["wheel" "networkmanager" "audio" "video" "plugdev" "docker"];
-    packages = with pkgs; [];
   };
-
-  users.groups.plugdev = {};
-
-  services.udev.packages = with pkgs; [android-udev-rules];
-  services.gvfs.enable = true;
-
+  
   # ───── Fonts ───────────────────────────────────────────
   fonts.packages = with pkgs; [
     nerd-fonts.comic-shanns-mono
   ];
 
   # ───── Optional Services ───────────────────────────────
-
-  services.resolved.enable = false;
+  
+  services.udev.packages = with pkgs; [android-udev-rules];
+  services.gvfs.enable = true;
+  services.resolved.enable = true;
 
   services.mpd = {
   enable = true;
@@ -159,7 +153,6 @@ in {
     audio_output {
       type "pulse"
       name "PipeWire"
-      server "unix:/run/user/1000/pulse/native"
     }
   '';
   };
@@ -254,12 +247,11 @@ in {
   # ───── Nix Configuration ───────────────────────────────
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.allowBroken = false;
-
+  nix.settings.auto-optimise-store = true;
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
   ];
 
-  system.copySystemConfiguration = true;
   system.stateVersion = "24.11";
 }
