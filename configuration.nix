@@ -46,7 +46,6 @@ in {
       vulkan-tools
       libva
       intel-media-driver
-      intel-vaapi-driver
     ];
   };
 
@@ -133,7 +132,7 @@ in {
 
   users.users.sajjad = {
     isNormalUser = true;
-    extraGroups = ["wheel" "networkmanager" "audio" "plugdev" "docker"];
+    extraGroups = ["wheel" "networkmanager" "audio" "video" "plugdev" "docker"];
     packages = with pkgs; [];
   };
 
