@@ -121,8 +121,7 @@ in {
   # ───── Programs ────────────────────────────────────────
   programs = {
     zsh.enable = true;
-    amnezia-vpn.enable = false;
-    firefox.enable = true;       
+    amnezia-vpn.enable = false;       
   };
 
   # ───── User Config ─────────────────────────────────────
@@ -160,85 +159,16 @@ in {
   # ───── System Packages ─────────────────────────────────
   environment.systemPackages = with pkgs; [
     android-tools
-    alacritty
-    anydesk
-    ayugram-desktop
-    alejandra
-    btop
-    bluetui
-    brightnessctl
-    bat
-    bitwarden-desktop
-    cliphist
-    duf
-    dunst
     docker-compose
-    eza
-    eog
-    fzf
     flatpak
-    fastfetch
-    filezilla
-    ffmpeg
-    gearlever
     git
     gccgo14
-    gparted
-    grim
-    gemini-cli
-    haruna
-    helix
+    home-manager
     jmtpfs
-    kitty
-    kdePackages.okular
-    kdePackages.filelight
-    libwnck
-    libnotify
-    lua-language-server
-    localsend
-    lazygit
-    motrix
     mpd
     mpc
-    neovim
-    nautilus
-    networkmanagerapplet
     nixd
-    openvpn
-    openconnect
-    obs-studio
-    p7zip
-    proxychains
-    persepolis
-    pcmanfm
-    python313
-    python313Packages.pip
-    picard
-    qbittorrent
-    stacer
-    starship
-    swww
-    slurp
-    scrcpy
-    tor
-    tor-browser
-    unrar
-    vim
-    vlc
-    v2rayn
     wget
-    waybar
-    wofi
-    wl-clipboard
-    waypaper
-    wezterm
-    youtube-music
-    yazi
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-    zoxide
-    zulu
-    zellij
     # Unstable Packages :
     unstable.amnezia-vpn
     unstable.rmpc
