@@ -60,6 +60,10 @@
     enableZshIntegration = true;
   };
 
+  programs.zen-browser = {
+    enable = true;
+  };
+
   # ───── User Packages (Alphabetical Order) ───────────────
   home.packages = with pkgs; [
     alacritty
