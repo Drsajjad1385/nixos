@@ -14,7 +14,7 @@ in {
       enable = true;
       splashImage = "/etc/nixos/background.jpg";
       efiSupport = true;
-      devices = [ "nodev" ];
+      devices = ["nodev"];
     };
     loader.efi.canTouchEfiVariables = true;
     kernelPackages = pkgs.linuxKernel.packages.linux_xanmod_stable;
@@ -24,7 +24,8 @@ in {
   networking = {
     hostName = "nixos-btw";
     networkmanager.enable = true;
-    nameservers = [ "8.8.8.8" "8.8.4.4" ];
+    nameservers = ["8.8.8.8" "8.8.4.4"];
+    dhcpcd.extraConfig = "nohook resolv.conf";
     firewall.enable = false;
     firewall.allowedTCPPorts = [8096 8920 7575 8080 5001 80 443];
     firewall.allowedUDPPorts = [53];
@@ -121,7 +122,7 @@ in {
   # ───── Programs ────────────────────────────────────────
   programs = {
     zsh.enable = true;
-    amnezia-vpn.enable = false;       
+    amnezia-vpn.enable = false;
   };
 
   # ───── User Config ─────────────────────────────────────
@@ -131,29 +132,29 @@ in {
     isNormalUser = true;
     extraGroups = ["wheel" "networkmanager" "audio" "video" "plugdev" "docker"];
   };
-  
+
   # ───── Fonts ───────────────────────────────────────────
   fonts.packages = with pkgs; [
     nerd-fonts.comic-shanns-mono
   ];
 
   # ───── Optional Services ───────────────────────────────
-  
+
   services.udev.packages = with pkgs; [android-udev-rules];
   services.gvfs.enable = true;
-  services.resolved.enable = true;
+  services.resolved.enable = false;
 
   services.mpd = {
-  enable = true;
-  user = "sajjad";
-  group = "audio";
-  musicDirectory = "/home/sajjad/Spotify";
-  extraConfig = ''
-    audio_output {
-      type "pulse"
-      name "PipeWire"
-    }
-  '';
+    enable = true;
+    user = "sajjad";
+    group = "audio";
+    musicDirectory = "/home/sajjad/Spotify";
+    extraConfig = ''
+      audio_output {
+        type "pulse"
+        name "PipeWire"
+      }
+    '';
   };
 
   # ───── System Packages ─────────────────────────────────
@@ -182,6 +183,13 @@ in {
     "nix-command"
     "flakes"
   ];
-
+  nix.settings.substituters = [
+    "https://mirror.anigil.com"
+    "https://cache.nixos.org" # keep the official cache as fallback
+  ];
+  nix.settings.trusted-substituters = [
+    "https://mirror.anigil.com"
+    "https://cache.nixos.org"
+  ];
   system.stateVersion = "24.11";
 }
