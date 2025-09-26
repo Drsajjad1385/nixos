@@ -97,6 +97,7 @@
     lazygit
     libnotify
     libwnck
+    libgbm
     localsend
     lua-language-server
     motrix
