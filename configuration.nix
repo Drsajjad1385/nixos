@@ -12,7 +12,7 @@
   boot = {
     loader.grub = {
       enable = true;
-      splashImage = "./background.jpg";
+      splashImage = "/home/sajjad/SelfHosted/nixos/background.jpg";
       efiSupport = true;
       devices = ["nodev"];
     };
