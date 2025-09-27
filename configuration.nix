@@ -3,16 +3,16 @@
   lib,
   pkgs,
   ...
-}: let
-  unstable = import <nixpkgs-unstable> {config.allowUnfree = true;};
-in {
+}:
+
+{
   imports = [./hardware-configuration.nix];
 
   # ───── Boot ─────────────────────────────────────────────
   boot = {
     loader.grub = {
       enable = true;
-      splashImage = "/etc/nixos/background.jpg";
+      splashImage = "./background.jpg";
       efiSupport = true;
       devices = ["nodev"];
     };
@@ -122,7 +122,6 @@ in {
   # ───── Programs ────────────────────────────────────────
   programs = {
     zsh.enable = true;
-    amnezia-vpn.enable = false;
   };
 
   # ───── User Config ─────────────────────────────────────
@@ -170,9 +169,6 @@ in {
     mpc
     nixd
     wget
-    # Unstable Packages :
-    unstable.amnezia-vpn
-    unstable.rmpc
   ];
 
   # ───── Nix Configuration ───────────────────────────────
