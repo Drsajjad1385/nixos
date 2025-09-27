@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  pkgsUnstable,
   ...
 }: {
   # ───── Home Manager Core ───────────────────────────────
@@ -138,5 +139,7 @@
     # Python
     python313
     python313Packages.pip
+    # Unstable-Packages
+    pkgsUnstable.rmpc 
   ];
 }
