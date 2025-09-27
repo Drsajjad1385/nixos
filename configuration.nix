@@ -3,9 +3,7 @@
   lib,
   pkgs,
   ...
-}:
-
-{
+}: {
   imports = [./hardware-configuration.nix];
 
   # ───── Boot ─────────────────────────────────────────────
@@ -77,6 +75,7 @@
     enable = true;
     pulse.enable = true;
     alsa.enable = true;
+    alsa.support32Bit = true;
   };
 
   # ───── Bluetooth ───────────────────────────────────────
@@ -146,12 +145,13 @@
   services.mpd = {
     enable = true;
     user = "sajjad";
-    group = "audio";
+    group = "users";
     musicDirectory = "/home/sajjad/Spotify";
     extraConfig = ''
       audio_output {
         type "pulse"
-        name "PipeWire"
+        name "PulseAudio"
+        server "unix:/run/user/1000/pulse/native"
       }
     '';
   };
