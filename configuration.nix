@@ -158,17 +158,17 @@
 
   # ───── System Packages ─────────────────────────────────
   environment.systemPackages = with pkgs; [
-    android-tools
-    docker-compose
-    flatpak
-    git
-    gccgo14
-    home-manager
-    jmtpfs
-    mpd
-    mpc
-    nixd
-    wget
+    android-tools # ADB/Fastboot for Android devices
+    docker-compose # Multi-container Docker apps
+    flatpak # Sandboxed desktop apps
+    git # Version control
+    gccgo14 # Go compiler
+    home-manager # Manage user config with Nix
+    jmtpfs # Mount Android phones via MTP
+    mpd # Music Player Daemon
+    mpc # CLI client for MPD
+    nixd # LSP server for Nix
+    wget # Download files from the web
   ];
 
   # ───── Nix Configuration ───────────────────────────────
