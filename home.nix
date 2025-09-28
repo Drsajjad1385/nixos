@@ -14,7 +14,7 @@
   # ───── Session & Environment ───────────────────────────
   home.sessionVariables = {
     EDITOR = "hx";
-    TERMINAL = "kitty";
+    TERMINAL = "ghostty";
     BROWSER = "firefox";
   };
 
@@ -90,6 +90,7 @@
     gnupg # Encryption/signing (GPG)
     gparted # GUI disk partitioner
     grim # Wayland screenshot tool
+    ghostty
     haruna # Qt-based video player
     helix # Modal code editor
     kitty # GPU-based terminal emulator
