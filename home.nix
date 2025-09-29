@@ -15,7 +15,7 @@
   home.sessionVariables = {
     EDITOR = "hx";
     TERMINAL = "ghostty";
-    BROWSER = "firefox";
+    BROWSER = "zen-twilight";
   };
 
   # ───── Shell: Zsh ──────────────────────────────────────
