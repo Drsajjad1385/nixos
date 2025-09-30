@@ -90,7 +90,7 @@
     gnupg # Encryption/signing (GPG)
     gparted # GUI disk partitioner
     grim # Wayland screenshot tool
-    ghostty
+    ghostty  # Modern GPU-accelerated terminal
     haruna # Qt-based video player
     helix # Modal code editor
     kitty # GPU-based terminal emulator
@@ -101,7 +101,6 @@
     libwnck # Window navigation library
     libgbm # Graphics buffer management (for compositors)
     localsend # Local file sharing over LAN
-    lua-language-server # LSP for Lua
     motrix # Download manager
     nautilus # GNOME file manager
     neovim # Extensible Vim-based editor
