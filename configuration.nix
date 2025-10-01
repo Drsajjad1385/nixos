@@ -57,6 +57,10 @@
     xwayland.enable = true;
   };
 
+  programs.niri = {
+    enable = true;
+  };
+
   services.displayManager.ly.enable = true;
 
   services.xserver = {
@@ -134,6 +138,7 @@
   # ───── Fonts ───────────────────────────────────────────
   fonts.packages = with pkgs; [
     nerd-fonts.comic-shanns-mono
+    nerd-fonts.jetbrains-mono
   ];
 
   # ───── Optional Services ───────────────────────────────
@@ -180,11 +185,9 @@
     "flakes"
   ];
   nix.settings.substituters = [
-    "https://mirror.anigil.com"
     "https://cache.nixos.org" # keep the official cache as fallback
   ];
   nix.settings.trusted-substituters = [
-    "https://mirror.anigil.com"
     "https://cache.nixos.org"
   ];
   system.stateVersion = "24.11";
