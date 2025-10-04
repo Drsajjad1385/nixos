@@ -23,7 +23,6 @@
     enable = true;
     oh-my-zsh = {
       enable = true;
-      theme = "robbyrussell";
       plugins = ["git" "sudo"];
     };
     autosuggestion.enable = true;
@@ -85,6 +84,7 @@
     filezilla # FTP/SFTP client
     ffmpeg # Audio/video processing
     fzf # Fuzzy finder
+    fuzzel # Wayland app launcher
     gearlever # AppImage management utility
     gemini-cli # CLI for Gemini AI
     gnupg # Encryption/signing (GPG)
@@ -106,6 +106,7 @@
     neovim # Extensible Vim-based editor
     networkmanagerapplet # NetworkManager system tray applet
     nerd-fonts.comic-shanns-mono # Monospace font
+    niri # Wayland tiling window manager
     obs-studio # recording software
     openconnect # Cisco AnyConnect-compatible VPN client
     openvpn # OpenVPN client
@@ -140,6 +141,6 @@
     python313 # Python 3.13 interpreter
     python313Packages.pip # Python package installer
     # Unstable-Packages
-    pkgsUnstable.rmpc # A music player or CLI tool
+    pkgsUnstable.rmpc # Rust Music Player Client
   ];
 }
