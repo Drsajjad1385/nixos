@@ -39,7 +39,28 @@
 
   # ───── XDG Base Directories ────────────────────────────
   xdg.enable = true;
-  xdg.mimeApps.enable = true;
+  xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      # File manager
+      "inode/directory" = [ "pcmanfm.desktop"]; 
+      # Text files
+      "text/plain" = [ "Helix.desktop" ];
+      # Images
+      "image/png" = [ "org.gnome.eog.desktop" ];
+      "image/jpeg" = [ "org.gnome.eog.desktop" ];
+      "image/gif" = [ "org.gnome.eog.desktop" ];
+      "image/webp" = [ "org.gnome.eog.desktop" ];
+      # PDF
+      "application/pdf" = [ "org.kde.okular.desktop" ];
+      # Browser
+      "x-scheme-handler/http" = [ "zen-twilight.desktop" ];
+      "x-scheme-handler/https" = [ "zen-twilight.desktop" ];
+      # Video
+      "video/mp4" = [ "org.kde.haruna.desktop" ];
+      "video/x-matroska" = [ "org.kde.haruna.desktop" ];
+    };
+  };
 
   # ───── Programs ────────────────────────────────────────
   programs.firefox.enable = true;
