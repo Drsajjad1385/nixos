@@ -87,16 +87,13 @@
 
   # ───── User Packages (Alphabetical Order) ───────────────
   home.packages = with pkgs; [
-    alacritty # GPU-accelerated terminal
     alejandra # Nix code formatter
-    anydesk # Remote desktop software
     ayugram-desktop # A Telegram client
     bat # "cat" with syntax highlighting
     bitwarden-desktop # Password manager
     bluetui # Terminal Bluetooth manager
     btop # System resource monitor
     brightnessctl # Control screen brightness
-    cliphist # Wayland clipboard history
     duf # Disk usage visualizer
     dunst # Lightweight notification daemon
     eog # GNOME image viewer
@@ -107,14 +104,10 @@
     fzf # Fuzzy finder
     fuzzel # Wayland app launcher
     gearlever # AppImage management utility
-    gemini-cli # CLI for Gemini AI
-    gnupg # Encryption/signing (GPG)
     gparted # GUI disk partitioner
-    grim # Wayland screenshot tool
     ghostty  # Modern GPU-accelerated terminal
     haruna # Qt-based video player
     helix # Modal code editor
-    kitty # GPU-based terminal emulator
     kdePackages.filelight # KDE disk usage visualizer
     kdePackages.okular # KDE document viewer
     lazygit # Terminal UI for Git
@@ -123,7 +116,7 @@
     libgbm # Graphics buffer management (for compositors)
     localsend # Local file sharing over LAN
     motrix # Download manager
-    mpv
+    mpv # Simple, lightweight media player for videos and music.
     nautilus # GNOME file manager
     neovim # Extensible Vim-based editor
     networkmanagerapplet # NetworkManager system tray applet
@@ -141,19 +134,15 @@
     scrcpy # Mirror & control Android devices
     stacer # Linux system optimizer & monitor
     starship # Minimal, fast shell prompt
-    slurp # Select screen region (Wayland)
     swww # Wayland wallpaper setter
     tor # Anonymity network client
     tor-browser # Anonymous web browser
+    tldr # Easy-to-read examples for command-line tools
     unrar # Extract RAR archives
     vim # Classic text editor
     vlc # Media player
-    v2rayn # GUI for V2Ray proxy
     waybar # Customizable Wayland status bar
-    waypaper # GUI wallpaper picker for Wayland
-    wezterm # GPU-accelerated terminal
     wl-clipboard # Wayland clipboard tools
-    wofi # Application launcher for Wayland
     youtube-music # YouTube Music desktop app
     yazi # Terminal file manager
     zellij # Terminal workspace multiplexer
