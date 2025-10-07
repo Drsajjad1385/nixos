@@ -15,7 +15,7 @@
       devices = ["nodev"];
     };
     loader.efi.canTouchEfiVariables = true;
-    kernelPackages = pkgs.linuxKernel.packages.linux_xanmod_stable;
+    kernelPackages = pkgs.linuxPackages_lqx;
   };
 
   # ───── Host & Locale ───────────────────────────────────
