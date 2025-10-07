@@ -52,11 +52,6 @@
   };
 
   # ───── Desktop & Display ───────────────────────────────
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
   programs.niri = {
     enable = true;
   };
