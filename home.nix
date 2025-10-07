@@ -57,8 +57,8 @@
       "x-scheme-handler/http" = [ "zen-twilight.desktop" ];
       "x-scheme-handler/https" = [ "zen-twilight.desktop" ];
       # Video
-      "video/mp4" = [ "org.kde.haruna.desktop" ];
-      "video/x-matroska" = [ "org.kde.haruna.desktop" ];
+      "video/mp4" = [ "mpv.desktop" ];
+      "video/x-matroska" = [ "mpv.desktop" ];
     };
   };
 
@@ -123,6 +123,7 @@
     libgbm # Graphics buffer management (for compositors)
     localsend # Local file sharing over LAN
     motrix # Download manager
+    mpv
     nautilus # GNOME file manager
     neovim # Extensible Vim-based editor
     networkmanagerapplet # NetworkManager system tray applet
