@@ -103,6 +103,7 @@
     ffmpeg # Audio/video processing
     fzf # Fuzzy finder
     fuzzel # Wayland app launcher
+    feh
     gearlever # AppImage management utility
     gparted # GUI disk partitioner
     ghostty  # Modern GPU-accelerated terminal
@@ -130,7 +131,9 @@
     picard # Music tag editor (MusicBrainz)
     p7zip # 7z archive support
     proxychains # Route apps through proxy
+    picom
     qbittorrent # Torrent client
+    rofi
     scrcpy # Mirror & control Android devices
     stacer # Linux system optimizer & monitor
     starship # Minimal, fast shell prompt
@@ -143,6 +146,7 @@
     vlc # Media player
     waybar # Customizable Wayland status bar
     wl-clipboard # Wayland clipboard tools
+    xclip
     youtube-music # YouTube Music desktop app
     yazi # Terminal file manager
     zellij # Terminal workspace multiplexer
