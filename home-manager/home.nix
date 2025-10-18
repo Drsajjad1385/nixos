@@ -37,7 +37,7 @@
     '';
   };
 
-  # ───── XDG Base Directories ────────────────────────────
+  # ───── XDG Base Directories & GTK ────────────────────────────
   xdg.enable = true;
   xdg.mimeApps = {
     enable = true;
@@ -60,6 +60,13 @@
       "video/mp4" = [ "mpv.desktop" ];
       "video/x-matroska" = [ "mpv.desktop" ];
     };
+  };
+
+  gtk = {
+    enable = true;
+    theme.name = "Dracula";
+    iconTheme.name = "WhiteSur-dark";
+    cursorTheme.name = "Nordic-cursors";
   };
 
   # ───── Programs ────────────────────────────────────────
