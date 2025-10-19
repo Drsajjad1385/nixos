@@ -147,7 +147,7 @@
     picard # Music tag editor (MusicBrainz)
     p7zip # 7z archive support
     proxychains # Route apps through proxy
-    picom
+    picom-pijulius
     qbittorrent # Torrent client
     rofi
     scrcpy # Mirror & control Android devices
