@@ -92,6 +92,15 @@
     enable = true;
   };
 
+  programs.chromium = {
+    enable = true;
+    package = pkgs.ungoogled-chromium;
+    commandLineArgs = [
+      "--password-store=basic"
+      "--password-manager-enable=false"
+    ];
+  }; 
+
   # ───── User Packages (Alphabetical Order) ───────────────
   home.packages = with pkgs; [
     alejandra # Nix code formatter
