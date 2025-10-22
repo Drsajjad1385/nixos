@@ -112,6 +112,7 @@
     brightnessctl # Control screen brightness
     duf # Disk usage visualizer
     dunst # Lightweight notification daemon
+    discord
     eog # GNOME image viewer
     eza # Modern "ls" replacement
     fastfetch # System info fetcher
