@@ -133,7 +133,6 @@
     libwnck # Window navigation library
     libgbm # Graphics buffer management (for compositors)
     localsend # Local file sharing over LAN
-    motrix # Download manager
     mpv # Simple, lightweight media player for videos and music.
     nautilus # GNOME file manager
     neovim # Extensible Vim-based editor
@@ -144,7 +143,6 @@
     openconnect # Cisco AnyConnect-compatible VPN client
     openvpn # OpenVPN client
     pcmanfm # Lightweight file manager
-    persepolis # GUI download manager
     picard # Music tag editor (MusicBrainz)
     p7zip # 7z archive support
     proxychains # Route apps through proxy
@@ -168,7 +166,6 @@
     yazi # Terminal file manager
     zellij # Terminal workspace multiplexer
     zoxide # Smarter "cd" command
-    zulu # OpenJDK Java runtime
     # Python
     python313 # Python 3.13 interpreter
     python313Packages.pip # Python package installer
