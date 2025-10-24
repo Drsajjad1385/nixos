@@ -43,22 +43,22 @@
     enable = true;
     defaultApplications = {
       # File manager
-      "inode/directory" = [ "pcmanfm.desktop"]; 
+      "inode/directory" = ["pcmanfm.desktop"];
       # Text files
-      "text/plain" = [ "Helix.desktop" ];
+      "text/plain" = ["Helix.desktop"];
       # Images
-      "image/png" = [ "org.gnome.eog.desktop" ];
-      "image/jpeg" = [ "org.gnome.eog.desktop" ];
-      "image/gif" = [ "org.gnome.eog.desktop" ];
-      "image/webp" = [ "org.gnome.eog.desktop" ];
+      "image/png" = ["org.gnome.eog.desktop"];
+      "image/jpeg" = ["org.gnome.eog.desktop"];
+      "image/gif" = ["org.gnome.eog.desktop"];
+      "image/webp" = ["org.gnome.eog.desktop"];
       # PDF
-      "application/pdf" = [ "org.kde.okular.desktop" ];
+      "application/pdf" = ["org.kde.okular.desktop"];
       # Browser
-      "x-scheme-handler/http" = [ "zen-twilight.desktop" ];
-      "x-scheme-handler/https" = [ "zen-twilight.desktop" ];
+      "x-scheme-handler/http" = ["zen-twilight.desktop"];
+      "x-scheme-handler/https" = ["zen-twilight.desktop"];
       # Video
-      "video/mp4" = [ "mpv.desktop" ];
-      "video/x-matroska" = [ "mpv.desktop" ];
+      "video/mp4" = ["mpv.desktop"];
+      "video/x-matroska" = ["mpv.desktop"];
     };
   };
 
@@ -99,7 +99,7 @@
       "--password-store=basic"
       "--password-manager-enable=false"
     ];
-  }; 
+  };
 
   # ───── User Packages (Alphabetical Order) ───────────────
   home.packages = with pkgs; [
@@ -123,7 +123,7 @@
     feh
     gearlever # AppImage management utility
     gparted # GUI disk partitioner
-    ghostty  # Modern GPU-accelerated terminal
+    ghostty # Modern GPU-accelerated terminal
     haruna # Qt-based video player
     helix # Modal code editor
     kdePackages.filelight # KDE disk usage visualizer
