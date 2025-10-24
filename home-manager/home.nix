@@ -64,9 +64,23 @@
 
   gtk = {
     enable = true;
-    theme.name = "Dracula";
-    iconTheme.name = "WhiteSur-dark";
-    cursorTheme.name = "Nordic-cursors";
+    # GTK Theme
+    theme = {
+      name = "Dracula";
+      package = pkgs.dracula-theme;
+    };
+    # Icon
+    iconTheme = {
+      name = "WhiteSur";
+      package = pkgs.whitesur-icon-theme;
+    };
+    # Cursor Theme
+    cursorTheme.name = "Bibata-Modern-Ice";
+  };
+  home.pointerCursor = {
+    name = "Bibata-Modern-Ice";
+    package = pkgs.bibata-cursors;
+    size = 24;
   };
 
   # ───── Programs ────────────────────────────────────────
