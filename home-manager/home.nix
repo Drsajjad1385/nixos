@@ -185,5 +185,6 @@
     python313Packages.pip # Python package installer
     # Unstable-Packages
     pkgsUnstable.rmpc # Rust Music Player Client
+    pkgsUnstable.obsidian
   ];
 }

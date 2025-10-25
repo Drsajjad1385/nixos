@@ -24,8 +24,14 @@
     ...
   }: let
     system = "x86_64-linux";
-    pkgs = import nixpkgs {inherit system;};
-    pkgsUnstable = nixpkgs-unstable.legacyPackages.${system};
+    pkgs = import nixpkgs {
+      inherit system;
+      config.allowUnfree = true;
+    };
+    pkgsUnstable = import nixpkgs-unstable {
+      inherit system;
+      config.allowUnfree = true;
+    };
   in {
     homeConfigurations.sajjad = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
