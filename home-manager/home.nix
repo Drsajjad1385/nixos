@@ -138,6 +138,7 @@
     gearlever # AppImage management utility
     gparted # GUI disk partitioner
     ghostty # Modern GPU-accelerated terminal
+    gnome-screenshot
     haruna # Qt-based video player
     helix # Modal code editor
     kdePackages.filelight # KDE disk usage visualizer
