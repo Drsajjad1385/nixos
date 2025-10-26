@@ -25,8 +25,6 @@
     nameservers = ["8.8.8.8" "8.8.4.4"];
     dhcpcd.extraConfig = "nohook resolv.conf";
     firewall.enable = false;
-    firewall.allowedTCPPorts = [8096 8920 7575 8080 5001 80 443];
-    firewall.allowedUDPPorts = [53];
   };
 
   time.timeZone = "Asia/Tehran";
@@ -152,7 +150,6 @@
 
   services.udev.packages = with pkgs; [android-udev-rules];
   services.gvfs.enable = true;
-  services.resolved.enable = false;
 
   services.mpd = {
     enable = true;
