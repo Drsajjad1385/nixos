@@ -85,7 +85,12 @@
 
   # ───── Programs ────────────────────────────────────────
   programs.firefox.enable = true;
-  programs.git.enable = true;
+
+  programs.git = {
+    enable = true;
+    userName = "Drsajjad1385";
+    userEmail = "surtr85@proton.me";
+  };
 
   programs.fzf = {
     enable = true;
@@ -132,7 +137,6 @@
     fastfetch # System info fetcher
     filezilla # FTP/SFTP client
     ffmpeg # Audio/video processing
-    fzf # Fuzzy finder
     fuzzel # Wayland app launcher
     feh
     gearlever # AppImage management utility
@@ -151,8 +155,6 @@
     mpv # Simple, lightweight media player for videos and music.
     nautilus # GNOME file manager
     neovim # Extensible Vim-based editor
-    networkmanagerapplet # NetworkManager system tray applet
-    nerd-fonts.comic-shanns-mono # Monospace font
     niri # Wayland tiling window manager
     obs-studio # recording software
     openconnect # Cisco AnyConnect-compatible VPN client
@@ -166,7 +168,6 @@
     rofi
     scrcpy # Mirror & control Android devices
     stacer # Linux system optimizer & monitor
-    starship # Minimal, fast shell prompt
     swww # Wayland wallpaper setter
     tor # Anonymity network client
     tor-browser # Anonymous web browser
@@ -180,7 +181,6 @@
     youtube-music # YouTube Music desktop app
     yazi # Terminal file manager
     zellij # Terminal workspace multiplexer
-    zoxide # Smarter "cd" command
     # Python
     python313 # Python 3.13 interpreter
     python313Packages.pip # Python package installer
