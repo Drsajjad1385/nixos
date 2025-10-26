@@ -131,18 +131,18 @@
     brightnessctl # Control screen brightness
     duf # Disk usage visualizer
     dunst # Lightweight notification daemon
-    discord
+    discord # Proprietary voice and text chat application
     eog # GNOME image viewer
     eza # Modern "ls" replacement
     fastfetch # System info fetcher
     filezilla # FTP/SFTP client
     ffmpeg # Audio/video processing
     fuzzel # Wayland app launcher
-    feh
+    feh # Lightweight image viewer
     gearlever # AppImage management utility
     gparted # GUI disk partitioner
     ghostty # Modern GPU-accelerated terminal
-    gnome-screenshot
+    gnome-screenshot # Screenshot capture utility
     haruna # Qt-based video player
     helix # Modal code editor
     kdePackages.filelight # KDE disk usage visualizer
@@ -163,9 +163,9 @@
     picard # Music tag editor (MusicBrainz)
     p7zip # 7z archive support
     proxychains # Route apps through proxy
-    picom-pijulius
+    picom-pijulius # Xorg compositor with effects
     qbittorrent # Torrent client
-    rofi
+    rofi # Application launcher
     scrcpy # Mirror & control Android devices
     stacer # Linux system optimizer & monitor
     swww # Wayland wallpaper setter
@@ -177,7 +177,7 @@
     vlc # Media player
     waybar # Customizable Wayland status bar
     wl-clipboard # Wayland clipboard tools
-    xclip
+    xclip # Command-line interface to the X11 clipboard
     youtube-music # YouTube Music desktop app
     yazi # Terminal file manager
     zellij # Terminal workspace multiplexer
@@ -186,6 +186,6 @@
     python313Packages.pip # Python package installer
     # Unstable-Packages
     pkgsUnstable.rmpc # Rust Music Player Client
-    pkgsUnstable.obsidian
+    pkgsUnstable.obsidian # Powerful knowledge base and note-taking app
   ];
 }
