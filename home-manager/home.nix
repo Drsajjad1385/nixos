@@ -14,7 +14,7 @@
   # ───── Session & Environment ───────────────────────────
   home.sessionVariables = {
     EDITOR = "hx";
-    TERMINAL = "ghostty";
+    TERMINAL = "wezterm";
     BROWSER = "zen-twilight";
   };
 
@@ -141,7 +141,6 @@
     feh # Lightweight image viewer
     gearlever # AppImage management utility
     gparted # GUI disk partitioner
-    ghostty # Modern GPU-accelerated terminal
     gnome-screenshot # Screenshot capture utility
     haruna # Qt-based video player
     helix # Modal code editor
@@ -177,6 +176,7 @@
     vlc # Media player
     waybar # Customizable Wayland status bar
     wl-clipboard # Wayland clipboard tools
+    wezterm # fast & customizable GPU terminal
     xclip # Command-line interface to the X11 clipboard
     youtube-music # YouTube Music desktop app
     yazi # Terminal file manager
