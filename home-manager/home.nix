@@ -66,13 +66,11 @@
     enable = true;
     # GTK Theme
     theme = {
-      name = "Dracula";
-      package = pkgs.dracula-theme;
+      name = "WhiteSur-Dark";
     };
     # Icon
     iconTheme = {
       name = "WhiteSur";
-      package = pkgs.whitesur-icon-theme;
     };
     # Cursor Theme
     cursorTheme.name = "Bibata-Modern-Ice";
@@ -80,7 +78,7 @@
   home.pointerCursor = {
     name = "Bibata-Modern-Ice";
     package = pkgs.bibata-cursors;
-    size = 20;
+    size = 18;
   };
 
   # ───── Programs ────────────────────────────────────────
