@@ -160,6 +160,7 @@
     p7zip # 7z archive support
     proxychains # Route apps through proxy
     picom-pijulius # Xorg compositor with effects
+    planify
     qbittorrent # Torrent client
     rofi # Application launcher
     scrcpy # Mirror & control Android devices
