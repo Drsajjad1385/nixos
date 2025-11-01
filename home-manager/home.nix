@@ -123,7 +123,6 @@
     alejandra # Nix code formatter
     ayugram-desktop # A Telegram client
     bat # "cat" with syntax highlighting
-    bitwarden-desktop # Password manager
     bluetui # Terminal Bluetooth manager
     btop # System resource monitor
     brightnessctl # Control screen brightness
