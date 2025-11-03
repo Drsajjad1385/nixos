@@ -15,7 +15,7 @@
   home.sessionVariables = {
     EDITOR = "hx";
     TERMINAL = "wezterm";
-    BROWSER = "zen-twilight";
+    BROWSER = "brave";
   };
 
   # ───── Shell: Zsh ──────────────────────────────────────
@@ -120,12 +120,14 @@
 
   # ───── User Packages (Alphabetical Order) ───────────────
   home.packages = with pkgs; [
+    aria2
     alejandra # Nix code formatter
     ayugram-desktop # A Telegram client
     bat # "cat" with syntax highlighting
     bluetui # Terminal Bluetooth manager
     btop # System resource monitor
     brightnessctl # Control screen brightness
+    brave
     duf # Disk usage visualizer
     dunst # Lightweight notification daemon
     discord # Proprietary voice and text chat application
