@@ -153,7 +153,6 @@
     mpv # Simple, lightweight media player for videos and music.
     nautilus # GNOME file manager
     neovim # Extensible Vim-based editor
-    niri # Wayland tiling window manager
     obs-studio # recording software
     openconnect # Cisco AnyConnect-compatible VPN client
     openvpn # OpenVPN client

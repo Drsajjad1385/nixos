@@ -55,10 +55,6 @@
   };
 
   # ───── Desktop & Display ───────────────────────────────
-  programs.niri = {
-    enable = true;
-  };
-
   services.displayManager.ly.enable = true;
 
   services.xserver = {
