@@ -73,11 +73,11 @@
       name = "WhiteSur";
     };
     # Cursor Theme
-    cursorTheme.name = "Bibata-Modern-Ice";
+    cursorTheme.name = "Nordzy-catppuccin-mocha-dark";
   };
   home.pointerCursor = {
-    name = "Bibata-Modern-Ice";
-    package = pkgs.bibata-cursors;
+    name = "Nordzy-catppuccin-mocha-dark";
+    package = pkgs.nordzy-cursor-theme;
     size = 18;
   };
 
