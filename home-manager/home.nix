@@ -54,8 +54,8 @@
       # PDF
       "application/pdf" = ["org.kde.okular.desktop"];
       # Browser
-      "x-scheme-handler/http" = ["zen-twilight.desktop"];
-      "x-scheme-handler/https" = ["zen-twilight.desktop"];
+      "x-scheme-handler/http" = ["brave-browser.desktop"];
+      "x-scheme-handler/https" = ["brave-browser.desktop"];
       # Video
       "video/mp4" = ["mpv.desktop"];
       "video/x-matroska" = ["mpv.desktop"];
@@ -151,7 +151,6 @@
     libgbm # Graphics buffer management (for compositors)
     localsend # Local file sharing over LAN
     mpv # Simple, lightweight media player for videos and music.
-    nautilus # GNOME file manager
     neovim # Extensible Vim-based editor
     obs-studio # recording software
     openconnect # Cisco AnyConnect-compatible VPN client
