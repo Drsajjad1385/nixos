@@ -8,14 +8,18 @@
 
   # ───── Boot ─────────────────────────────────────────────
   boot = {
-    loader.grub = {
-      enable = true;
-      splashImage = "/home/sajjad/SelfHosted/nixos/background.jpg";
-      efiSupport = true;
-      devices = ["nodev"];
-    };
-    loader.efi.canTouchEfiVariables = true;
     kernelPackages = pkgs.linuxPackages_lqx;
+    loader = {
+      efi = {
+        canTouchEfiVariables = true;
+      };
+      grub = {
+        enable = true;
+        splashImage = "/home/sajjad/SelfHosted/nixos/background.jpg";
+        efiSupport = true;
+        device = "nodev";
+      };
+    };
   };
 
   # ───── Host & Locale ───────────────────────────────────
