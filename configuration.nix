@@ -157,7 +157,7 @@
     enable = true;
     user = "sajjad";
     group = "users";
-    musicDirectory = "/home/sajjad/Spotify";
+    musicDirectory = "/home/sajjad/Music";
     extraConfig = ''
       audio_output {
         type "pulse"

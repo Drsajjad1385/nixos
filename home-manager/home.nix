@@ -35,6 +35,11 @@
       setopt hist_ignore_dups
       setopt share_history
     '';
+    shellAliases = {
+      l = "eza --icons=always";
+      ls = "eza -l --icons=always";
+      la = "eza -la --icons=always";
+    };
   };
 
   # ───── XDG Base Directories & GTK ────────────────────────────
@@ -109,25 +114,15 @@
     enable = true;
   };
 
-  programs.chromium = {
-    enable = true;
-    package = pkgs.ungoogled-chromium;
-    commandLineArgs = [
-      "--password-store=basic"
-      "--password-manager-enable=false"
-    ];
-  };
-
   # ───── User Packages (Alphabetical Order) ───────────────
   home.packages = with pkgs; [
-    aria2
+    aria2 # Terminal Download Manager
     alejandra # Nix code formatter
     ayugram-desktop # A Telegram client
     bat # "cat" with syntax highlighting
     bluetui # Terminal Bluetooth manager
     btop # System resource monitor
     brightnessctl # Control screen brightness
-    brave
     duf # Disk usage visualizer
     dunst # Lightweight notification daemon
     discord # Proprietary voice and text chat application
@@ -160,7 +155,6 @@
     p7zip # 7z archive support
     proxychains # Route apps through proxy
     picom-pijulius # Xorg compositor with effects
-    planify
     qbittorrent # Torrent client
     rofi # Application launcher
     scrcpy # Mirror & control Android devices
