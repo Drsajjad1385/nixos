@@ -15,7 +15,7 @@
   home.sessionVariables = {
     EDITOR = "hx";
     TERMINAL = "wezterm";
-    BROWSER = "brave";
+    BROWSER = "firefox";
   };
 
   # ───── Shell: Zsh ──────────────────────────────────────
