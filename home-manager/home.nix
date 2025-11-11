@@ -66,11 +66,11 @@
     enable = true;
     # GTK Theme
     theme = {
-      name = "WhiteSur-Dark";
+      name = "Squared";
     };
     # Icon
     iconTheme = {
-      name = "WhiteSur";
+      name = "Papirus";
     };
     # Cursor Theme
     cursorTheme.name = "Nordzy-catppuccin-mocha-dark";
