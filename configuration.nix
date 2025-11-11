@@ -24,7 +24,7 @@
 
   # ───── Host & Locale ───────────────────────────────────
   networking = {
-    hostName = "nixos-btw";
+    hostName = "sajjad";
     networkmanager.enable = true;
     nameservers = ["8.8.8.8" "8.8.4.4"];
     dhcpcd.extraConfig = "nohook resolv.conf";
@@ -194,5 +194,5 @@
   nix.settings.trusted-substituters = [
     "https://cache.nixos.org"
   ];
-  system.stateVersion = "24.11";
+  system.stateVersion = "25.05";
 }
