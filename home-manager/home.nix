@@ -59,11 +59,11 @@
       # PDF
       "application/pdf" = ["org.kde.okular.desktop"];
       # Browser
-      "x-scheme-handler/http" = ["brave-browser.desktop"];
-      "x-scheme-handler/https" = ["brave-browser.desktop"];
+      "x-scheme-handler/http" = ["firefox.desktop"];
+      "x-scheme-handler/https" = ["firefox.desktop"];
       # Video
-      "video/mp4" = ["mpv.desktop"];
-      "video/x-matroska" = ["mpv.desktop"];
+      "video/mp4" = ["org.kde.haruna.desktop"];
+      "video/x-matroska" = ["org.kde.haruna.desktop"];
     };
   };
 
