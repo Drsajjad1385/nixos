@@ -132,9 +132,11 @@
     filezilla # FTP/SFTP client
     ffmpeg # Audio/video processing
     feh # Lightweight image viewer
+    fd # Fast find alternative
     gearlever # AppImage management utility
     gparted # GUI disk partitioner
     gnome-screenshot # Screenshot capture utility
+    gcc # C compiler for tree-sitter parsers
     haruna # Qt-based video player
     helix # Modal code editor
     kdePackages.filelight # KDE disk usage visualizer
@@ -156,11 +158,12 @@
     picom-pijulius # Xorg compositor with effects
     qbittorrent # Torrent client
     rofi # Application launcher
-    scrcpy # Mirror & control Android devices
+    ripgrep # Fast grep alternative
     stacer # Linux system optimizer & monitor
     tor # Anonymity network client
     tor-browser # Anonymous web browser
     tldr # Easy-to-read examples for command-line tools
+    tree-sitter # Tree-sitter CLI for nvim-treesitter
     unrar # Extract RAR archives
     vim # Classic text editor
     vlc # Media player
