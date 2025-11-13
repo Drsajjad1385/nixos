@@ -131,7 +131,6 @@
     fastfetch # System info fetcher
     filezilla # FTP/SFTP client
     ffmpeg # Audio/video processing
-    fuzzel # Wayland app launcher
     feh # Lightweight image viewer
     gearlever # AppImage management utility
     gparted # GUI disk partitioner
@@ -159,17 +158,14 @@
     rofi # Application launcher
     scrcpy # Mirror & control Android devices
     stacer # Linux system optimizer & monitor
-    swww # Wayland wallpaper setter
     tor # Anonymity network client
     tor-browser # Anonymous web browser
     tldr # Easy-to-read examples for command-line tools
     unrar # Extract RAR archives
     vim # Classic text editor
     vlc # Media player
-    waybar # Customizable Wayland status bar
-    wl-clipboard # Wayland clipboard tools
     wezterm # fast & customizable GPU terminal
-    xclip # Command-line interface to the X11 clipboard
+    xsel # Command-line interface to the X11 clipboard
     youtube-music # YouTube Music desktop app
     yazi # Terminal file manager
     zellij # Terminal workspace multiplexer
