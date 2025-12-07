@@ -162,7 +162,6 @@
     picard # Music tag editor (MusicBrainz)
     p7zip # 7z archive support
     proxychains # Route apps through proxy
-    picom-pijulius # Xorg compositor with effects
     qbittorrent # Torrent client
     ripgrep # Fast grep alternative
     slurp
@@ -177,6 +176,7 @@
     wezterm # fast & customizable GPU terminal
     wofi # Application launcher
     waypaper
+    waybar
     wl-clipboard
     youtube-music # YouTube Music desktop app
     yazi # Terminal file manager
