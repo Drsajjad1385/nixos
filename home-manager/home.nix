@@ -136,6 +136,7 @@
     gearlever # AppImage management utility
     gparted # GUI disk partitioner
     gcc # C compiler for tree-sitter parsers
+    grim
     haruna # Qt-based video player
     helix # Modal code editor
     kdePackages.filelight # KDE disk usage visualizer
@@ -146,6 +147,7 @@
     libgbm # Graphics buffer management (for compositors)
     localsend # Local file sharing over LAN
     mpv # Simple, lightweight media player for videos and music.
+    mpvpaper
     neovim # Extensible Vim-based editor
     obs-studio # recording software
     openconnect # Cisco AnyConnect-compatible VPN client
@@ -156,8 +158,9 @@
     proxychains # Route apps through proxy
     picom-pijulius # Xorg compositor with effects
     qbittorrent # Torrent client
-    wofi # Application launcher
     ripgrep # Fast grep alternative
+    slurp
+    swww
     tor # Anonymity network client
     tor-browser # Anonymous web browser
     tldr # Easy-to-read examples for command-line tools
@@ -166,6 +169,9 @@
     vim # Classic text editor
     vlc # Media player
     wezterm # fast & customizable GPU terminal
+    wofi # Application launcher
+    waypaper
+    wl-clipboard
     youtube-music # YouTube Music desktop app
     yazi # Terminal file manager
     zellij # Terminal workspace multiplexer
