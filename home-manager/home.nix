@@ -7,7 +7,7 @@
   # ───── Home Manager Core ───────────────────────────────
   programs.home-manager.enable = true;
   nixpkgs.config.allowUnfree = true;
-  home.stateVersion = "25.05";
+  home.stateVersion = "25.11";
   home.username = "sajjad";
   home.homeDirectory = "/home/sajjad";
 
@@ -91,8 +91,10 @@
 
   programs.git = {
     enable = true;
-    userName = "Drsajjad1385";
-    userEmail = "surtr85@proton.me";
+    settings = {
+    user.name = "Drsajjad1385";
+    user.email = "surtr85@proton.me";
+    };
   };
 
   programs.fzf = {
@@ -125,17 +127,14 @@
     brightnessctl # Control screen brightness
     duf # Disk usage visualizer
     dunst # Lightweight notification daemon
-    discord # Proprietary voice and text chat application
+    #discord # Proprietary voice and text chat application
     eog # GNOME image viewer
     eza # Modern "ls" replacement
     fastfetch # System info fetcher
-    filezilla # FTP/SFTP client
     ffmpeg # Audio/video processing
-    feh # Lightweight image viewer
     fd # Fast find alternative
     gearlever # AppImage management utility
     gparted # GUI disk partitioner
-    gnome-screenshot # Screenshot capture utility
     gcc # C compiler for tree-sitter parsers
     haruna # Qt-based video player
     helix # Modal code editor
@@ -157,9 +156,8 @@
     proxychains # Route apps through proxy
     picom-pijulius # Xorg compositor with effects
     qbittorrent # Torrent client
-    rofi # Application launcher
+    wofi # Application launcher
     ripgrep # Fast grep alternative
-    stacer # Linux system optimizer & monitor
     tor # Anonymity network client
     tor-browser # Anonymous web browser
     tldr # Easy-to-read examples for command-line tools
@@ -168,7 +166,6 @@
     vim # Classic text editor
     vlc # Media player
     wezterm # fast & customizable GPU terminal
-    xsel # Command-line interface to the X11 clipboard
     youtube-music # YouTube Music desktop app
     yazi # Terminal file manager
     zellij # Terminal workspace multiplexer

@@ -1,13 +1,10 @@
 {pkgs, ...}: {
   boot = {
-    kernelPackages = pkgs.linuxPackages_lqx;
+    kernelPackages = pkgs.linuxPackages_zen;
     loader = {
       efi.canTouchEfiVariables = true;
-      grub = {
+      systemd-boot = {
         enable = true;
-        splashImage = "/home/sajjad/SelfHosted/nixos/background.jpg";
-        efiSupport = true;
-        device = "nodev";
       };
     };
   };

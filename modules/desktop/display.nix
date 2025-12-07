@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   services.displayManager.ly.enable = true;
+  programs.hyprland.enable = true;
 
   # XDG Portal support
   xdg.portal = {

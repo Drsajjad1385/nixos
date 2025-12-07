@@ -3,6 +3,6 @@
 
   users.users.sajjad = {
     isNormalUser = true;
-    extraGroups = ["wheel" "networkmanager" "audio" "video" "plugdev" "docker"];
+    extraGroups = ["wheel" "networkmanager" "audio" "video" "plugdev"];
   };
 }

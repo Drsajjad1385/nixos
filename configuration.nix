@@ -15,7 +15,6 @@
     ./modules/hardware/bluetooth.nix
 
     # Desktop
-    ./modules/desktop/xserver.nix
     ./modules/desktop/display.nix
 
     # Services
@@ -45,5 +44,5 @@
   nix.settings.substituters = ["https://cache.nixos.org"];
   nix.settings.trusted-substituters = ["https://cache.nixos.org"];
 
-  system.stateVersion = "25.05";
+  system.stateVersion = "25.11";
 }

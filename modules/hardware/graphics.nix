@@ -3,12 +3,10 @@
     enable = true;
     enable32Bit = true;
     extraPackages = with pkgs; [
-      amdvlk
       mesa
       vulkan-loader
       vulkan-tools
       libva
-      intel-media-driver
     ];
   };
 
