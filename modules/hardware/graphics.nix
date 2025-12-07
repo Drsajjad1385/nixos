@@ -14,4 +14,6 @@
     legacySupport.enable = true;
     initrd.enable = true;
   };
+
+  hardware.i2c.enable = true;
 }

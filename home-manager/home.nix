@@ -128,6 +128,7 @@
     duf # Disk usage visualizer
     dunst # Lightweight notification daemon
     #discord # Proprietary voice and text chat application
+    ddcutil
     eog # GNOME image viewer
     eza # Modern "ls" replacement
     fastfetch # System info fetcher
@@ -148,6 +149,7 @@
     localsend # Local file sharing over LAN
     mpv # Simple, lightweight media player for videos and music.
     mpvpaper
+    nautilus
     neovim # Extensible Vim-based editor
     obs-studio # recording software
     openconnect # Cisco AnyConnect-compatible VPN client
