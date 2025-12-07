@@ -16,6 +16,10 @@
     EDITOR = "hx";
     TERMINAL = "wezterm";
     BROWSER = "firefox";
+    GTK_THEME = "Graphite-Dark";
+    GTK_ICON_THEME = "Papirus";
+    GTK_CURSOR_THEME = "Bibata-Modern-Classic";
+    XDG_CURRENT_DESKTOP = "Hyprland";
   };
 
   # ───── Shell: Zsh ──────────────────────────────────────
@@ -71,18 +75,18 @@
     enable = true;
     # GTK Theme
     theme = {
-      name = "Squared";
+      name = "Graphite-Dark";
     };
     # Icon
     iconTheme = {
       name = "Papirus";
     };
     # Cursor Theme
-    cursorTheme.name = "Nordzy-catppuccin-mocha-dark";
+    cursorTheme.name = "Bibata-Modern-Classic";
   };
   home.pointerCursor = {
-    name = "Nordzy-catppuccin-mocha-dark";
-    package = pkgs.nordzy-cursor-theme;
+    name = "Bibata-Modern-Classic";
+    package = pkgs.bibata-cursors;
     size = 18;
   };
 

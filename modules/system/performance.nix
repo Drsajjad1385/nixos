@@ -1,6 +1,4 @@
 {lib, ...}: {
-  powerManagement.cpuFreqGovernor = lib.mkDefault "performance";
-
   zramSwap = {
     enable = true;
     algorithm = "zstd";
