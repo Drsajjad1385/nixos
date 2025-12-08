@@ -16,7 +16,7 @@
     EDITOR = "hx";
     TERMINAL = "wezterm";
     BROWSER = "firefox";
-    GTK_THEME = "Graphite-Dark";
+    GTK_THEME = "Squared";
     GTK_ICON_THEME = "Papirus";
     GTK_CURSOR_THEME = "Bibata-Modern-Classic";
     XDG_CURRENT_DESKTOP = "Hyprland";
@@ -75,7 +75,7 @@
     enable = true;
     # GTK Theme
     theme = {
-      name = "Graphite-Dark";
+      name = "Squared";
     };
     # Icon
     iconTheme = {
