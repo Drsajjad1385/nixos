@@ -123,6 +123,7 @@
 
   # ───── User Packages (Alphabetical Order) ───────────────
   home.packages = with pkgs; [
+    acpi # Battery status
     aria2 # Terminal Download Manager
     alejandra # Nix code formatter
     ayugram-desktop # A Telegram client
@@ -159,12 +160,12 @@
     obs-studio # recording software
     openconnect # Cisco AnyConnect-compatible VPN client
     openvpn # OpenVPN client
-    pcmanfm # Lightweight file manager
     picard # Music tag editor (MusicBrainz)
     p7zip # 7z archive support
     proxychains # Route apps through proxy
     qbittorrent # Torrent client
     ripgrep # Fast grep alternative
+    ryzenadj # AMD TDP control
     slurp
     swww
     tor # Anonymity network client

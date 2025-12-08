@@ -7,8 +7,10 @@
   };
 
   # Power Management
-  powerManagement.cpuFreqGovernor = "schedutil"; # or "powersave" for better battery-life
   services.power-profiles-daemon.enable = true;
+  services.thermald.enable = true;
+  services.upower.enable = true;
+  powerManagement.enable = true;
   # CPU & Firmware
   hardware.enableRedistributableFirmware = true;
   hardware.cpu.amd.updateMicrocode = true;
