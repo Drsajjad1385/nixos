@@ -43,6 +43,14 @@
   nix.settings.experimental-features = ["nix-command" "flakes"];
   nix.settings.substituters = ["https://cache.nixos.org"];
   nix.settings.trusted-substituters = ["https://cache.nixos.org"];
+  nix.settings.cores = 16;
+  nix.settings.max-jobs = 8;
+
+  # Environment Variables
+  environment.sessionVariables = {
+    NIXOS_OZONE_WL = "1";
+    AMD_VULKAN_ICD = "RADV";
+  };
 
   system.stateVersion = "25.11";
 }

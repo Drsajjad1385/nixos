@@ -20,6 +20,7 @@
     GTK_ICON_THEME = "Papirus";
     GTK_CURSOR_THEME = "Bibata-Modern-Classic";
     XDG_CURRENT_DESKTOP = "Hyprland";
+    WLR_NO_HARDWARE_CURSORS = "1";
   };
 
   # ───── Shell: Zsh ──────────────────────────────────────
@@ -131,7 +132,7 @@
     brightnessctl # Control screen brightness
     duf # Disk usage visualizer
     dunst # Lightweight notification daemon
-    #discord # Proprietary voice and text chat application
+    discord # Proprietary voice and text chat application
     ddcutil
     eog # GNOME image viewer
     eza # Modern "ls" replacement

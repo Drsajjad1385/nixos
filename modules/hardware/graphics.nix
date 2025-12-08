@@ -7,12 +7,13 @@
       vulkan-loader
       vulkan-tools
       libva
+      libva-utils
     ];
   };
 
   hardware.amdgpu = {
-    legacySupport.enable = true;
     initrd.enable = true;
+    opencl.enable = true;
   };
 
   hardware.i2c.enable = true;
