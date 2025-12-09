@@ -13,9 +13,9 @@
 
   # ───── Session & Environment ───────────────────────────
   home.sessionVariables = {
-    EDITOR = "hx";
+    EDITOR = "nvim";
     TERMINAL = "wezterm";
-    BROWSER = "firefox";
+    BROWSER = "zen-twilight";
     GTK_THEME = "Squared";
     GTK_ICON_THEME = "Papirus";
     GTK_CURSOR_THEME = "Bibata-Modern-Classic";
@@ -53,9 +53,9 @@
     enable = true;
     defaultApplications = {
       # File manager
-      "inode/directory" = ["pcmanfm.desktop"];
+      "inode/directory" = ["org.gnome.Nautilus.desktop"];
       # Text files
-      "text/plain" = ["Helix.desktop"];
+      "text/plain" = ["nvim.desktop"];
       # Images
       "image/png" = ["org.gnome.eog.desktop"];
       "image/jpeg" = ["org.gnome.eog.desktop"];
@@ -134,7 +134,7 @@
     duf # Disk usage visualizer
     dunst # Lightweight notification daemon
     discord # Proprietary voice and text chat application
-    ddcutil
+    ddcutil # External monitor control via DDC/CI
     eog # GNOME image viewer
     eza # Modern "ls" replacement
     fastfetch # System info fetcher
@@ -143,7 +143,7 @@
     gearlever # AppImage management utility
     gparted # GUI disk partitioner
     gcc # C compiler for tree-sitter parsers
-    grim
+    grim # Wayland screenshot utility
     haruna # Qt-based video player
     helix # Modal code editor
     kdePackages.filelight # KDE disk usage visualizer
@@ -154,8 +154,8 @@
     libgbm # Graphics buffer management (for compositors)
     localsend # Local file sharing over LAN
     mpv # Simple, lightweight media player for videos and music.
-    mpvpaper
-    nautilus
+    mpvpaper # Video wallpaper for Wayland
+    nautilus # GNOME file manager
     neovim # Extensible Vim-based editor
     obs-studio # recording software
     openconnect # Cisco AnyConnect-compatible VPN client
@@ -166,8 +166,8 @@
     qbittorrent # Torrent client
     ripgrep # Fast grep alternative
     ryzenadj # AMD TDP control
-    slurp
-    swww
+    slurp # Wayland region selector
+    swww # Efficient animated wallpaper daemon for Wayland
     tor # Anonymity network client
     tor-browser # Anonymous web browser
     tldr # Easy-to-read examples for command-line tools
@@ -177,9 +177,9 @@
     vlc # Media player
     wezterm # fast & customizable GPU terminal
     wofi # Application launcher
-    waypaper
-    waybar
-    wl-clipboard
+    waypaper # Wallpaper manager with GUI for Wayland
+    waybar # Highly customizable status bar for Wayland
+    wl-clipboard # Command-line clipboard utilities for Wayland
     youtube-music # YouTube Music desktop app
     yazi # Terminal file manager
     zellij # Terminal workspace multiplexer
