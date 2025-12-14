@@ -181,6 +181,7 @@
     waybar # Highly customizable status bar for Wayland
     wl-clipboard # Command-line clipboard utilities for Wayland
     youtube-music # YouTube Music desktop app
+    yt-dlp # Feature-rich command-line audio/video downloader
     yazi # Terminal file manager
     zellij # Terminal workspace multiplexer
     # Python
